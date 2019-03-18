@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <!-- NORMALISE -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
+
+  <!-- purecss buttons -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+  <!-- slider links -->
+  <link rel="stylesheet" href="base.css" />
+  <link rel="stylesheet" href="slider.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css" rel="stylesheet" type="text/css" />
+  <!--- Component JS -->
+  
+
+  <!--- Example CSS -->
+
+  <!--- Site CSS -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/site.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+
+    <!--- Component CSS -->
+    <link rel="stylesheet" type="text/css" href="css/icon.css">
+    <link rel="stylesheet" type="text/css" href="css/button.css">
+    <link rel="stylesheet" type="text/css" href="css/card.css">
+    <link rel="stylesheet" type="text/css" href="css/label.css">
+    <link rel="stylesheet" type="text/css" href="css/image.css">
+    <link rel="stylesheet" type="text/css" href="css/reveal.css">
+    <link rel="stylesheet" type="text/css" href="css/dimmer.css">
+    <link rel="stylesheet" type="text/css" href="css/rating.css">
+    <link rel="stylesheet" type="text/css" href="css/transition.css">
+    <link rel="stylesheet" type="text/css" href="css/popup.css">
+
+    <!-- ../../dist/components/ -->
+    
+    
+    <!--- Component JS -->
+  <!-- <script src="../assets/library/jquery.min.js"></script>
+  <script src="../assets/library/iframe-content.js"></script> -->
+    <!-- libraries -->
+    <script src="js/assets/library/jquery.min.js"></script>
+    <script src="js/assets/library/iframe-content.js"></script>
+
+    <!-- components -->
+    <script type="text/javascript" src="js/assets/components/popup.js"></script>
+    <script type="text/javascript" src="js/assets/components/dimmer.js"></script>
+    <script type="text/javascript" src="js/assets/components/rating.js"></script>
+    <script type="text/javascript" src="js/assets/components/transition.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script>
+
+    <style type="text/css">
+      .container{
+        width:80%;
+        background:grey;
+      }
+
+      .wrapper{
+        height:70vh;
+      }
+
+      .grid{
+        display:grid;
+        grid-template-rows:auto;
+        grid-template-columns:repeat(4, 1fr);
+        grid-auto-flow:row dense;
+        grid-gap:25px;
+        justify-content: space-between;
+        align-items:center;
+      }
+
+      .item{
+        border:1px dotted green;
+      }
+
+      .ui.card{
+        margin:0;
+        height:400px;
+      }
+
+      .buy-it{
+        display:flex;
+        justify-content: space-around;
+        align-items:center;
+        border-top:1px solid #2224261a;
+        padding:8px 0;
+        /*align-self:stretch;*/
+        /*margin:auto;*/
+
+       /* margin:0;
+        padding:0;*/
+      }
+
+      .extra.content .ui.button, .extra.content span{
+        text-align:center;
+      }
+
+      .card{
+      	display:flex;
+      	flex-direction:column;
+      	justify-content: space-between;
+      	background:white;
+      	border-radius:5px;
+      	height:350px;
+      }
+      	.card .image{
+      		/*flex-basis:10%;*/
+      		align-self:flex-start;
+      		flex-basis:30%;
+      	}
+
+		.card .content{
+			border-top:1px solid #2224261a;
+			/*border-bottom:1px solid #2224261a;*/
+			flex-basis:50%;
+			overflow:hidden;
+			/*position: relative;*/
+			/*bottom: 40px;*/
+			/*overflow:hidden;*/
+			/*align-self:flex-start;*/
+		}
+		
+      .card.buy-it{
+      	flex-basis:10%;
+      	align-self:flex-end;
+      	align-self: flex-end;
+      }
+		
+/*		.card .content{
+
+		    position: relative;
+		    bottom: 90px;
+		}*/
+
+    </style>
+  
+
+
+
+  <title>JS Bin</title>
+</head>
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="grid">
+      
+		<div class="card">
+			<figure class="image">
+				<img width="200px" src="images/T90B_14.1_inch.jpg" alt="">
+			</figure>
+			<div class="content">
+				<h3>Product Name</h3>
+				<div class="description">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis laborum exercitationem illum eum corrupti consectetur magnam cumque iusto voluptatum quibusdam. Quibusdam nesciunt dolorum neque amet doloremque, libero, provident dolorem fugiat.
+				</div>
+			</div>
+			<div class="buy-it">
+				<span class="price">price</span><button class="pure-button button-blue" >Add to cart</button>	
+			</div>
+		</div>
+
+		
+		<div style="display:block" class="ui card">
+		  <figure class="image">
+		    <img src="images/T90B_14.1_inch.jpg" >
+		  </figure>
+
+		  <div class="content">
+		    <a class="header">Product Name</a>
+		    <div class="description">
+		      Product description
+		    </div>
+		  </div>
+		  <div class="buy-it">
+		    <span class="price">price</span><button class="pure-button button-blue" >Add to cart</button>
+		  </div>
+		</div>
+        
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>

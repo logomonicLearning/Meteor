@@ -1,0 +1,136 @@
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Meteor</title>
+
+  <!--- CSS:reset, site, grid, icon, button, card, label, image, reveal, dimmer, rating, transition, popup(13) -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/slider.css" />
+    <link rel="stylesheet" type="text/css" href="css/button.css">
+    <link rel="stylesheet" type="text/css" href="css/card.css">
+    <link rel="stylesheet" type="text/css" href="css/dimmer.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/icon.css">
+    <link rel="stylesheet" type="text/css" href="css/image.css">
+    <link rel="stylesheet" type="text/css" href="css/label.css">
+    <link rel="stylesheet" type="text/css" href="css/popup.css">
+    <link rel="stylesheet" type="text/css" href="css/rating.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/reveal.css">
+    <link rel="stylesheet" type="text/css" href="css/site.css">
+    <link rel="stylesheet" type="text/css" href="css/transition.css">
+
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/input.css">
+    <link rel="stylesheet" type="text/css" href="css/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="css/divider.css">
+
+    <!---requiresmenu, input, dropdown,  divider,-->
+
+
+    <!--- MYJS-->
+
+    <!--- Component JS -->
+    <script src="js/transition.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/dimmer.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/rating.js"></script>
+
+    <!--assets/library-->
+    <script src="js/iframe-content.js"></script>
+    <script src="js/jquery.min.js"></script>
+
+  
+  <!---end of my stuff-->
+  
+
+
+
+  <!--- normal Component CSS -->
+  <!--- menu, inut, dropdown, icon, button, transition, reset, site, grid, popup, divider, label -->
+  <link rel="stylesheet" type="text/css" href="../../dist/components/menu.css">
+  <link rel="stylesheet" type="text/css" href="../../dist/components/input.css">
+  <link rel="stylesheet" type="text/css" href="../../dist/components/dropdown.css">
+  <link rel="stylesheet" type="text/css" href="../../dist/components/icon.css">
+  <link rel="stylesheet" type="text/css" href="../../dist/components/button.css">
+  <link rel="stylesheet" type="text/css" href="../../dist/components/transition.css">
+  <link rel="stylesheet" type="text/css" href="../../dist/components/reset.css">
+  <link rel="stylesheet" type="text/css" href="../../dist/components/site.css">
+  <link rel="stylesheet" type="text/css" href="../../dist/components/grid.css">
+  <link rel="stylesheet" type="text/css" href="../../dist/components/popup.css">
+
+  <link rel="stylesheet" type="text/css" href="../../dist/components/divider.css">
+  <link rel="stylesheet" type="text/css" href="../../dist/components/label.css">
+
+
+
+  <!-- ../../dist/components/ -->
+
+  
+  <!--- Example Libs -->
+  <!-- popup(css& js, jquery, iframe, show-examples??,  -->
+  <script src="../assets/library/jquery.min.js"></script>
+  <script src="../assets/library/iframe-content.js"></script>
+  <script src="../assets/show-examples.js"></script>
+  <script type="text/javascript" src="../../dist/components/popup.js"></script>
+  <script type="text/javascript" src="js/transition.js"></script>
+  <script type="text/javascript" src="../../dist/components/transition.js"></script>
+
+  <!--- Component JS -->
+  <script type="text/javascript" src="../../dist/components/transition.js"></script>
+  <script type="text/javascript" src="../../dist/components/dropdown.js"></script>
+  <script type="text/javascript" src="../../dist/components/dropdown.js"></script>
+
+
+    <!-- extra to cover my areas from form -->
+    <!--- Component JS -->
+    <script src="js/assets/library/jquery.min.js"></script>
+    <script src="js/assets/library/iframe-content.js"></script>
+    <script type="text/javascript" src="js/popup.js"></script>
+    <script type="text/javascript" src="js/dimmer.js"></script>
+    <script type="text/javascript" src="js/rating.js"></script>
+
+    
+<!---slides in index7-->
+
+  <!-- myslider links -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/slider.css" />
+  
+    <link rel="stylesheet" type="text/css" href="css/button.css">
+    <link rel="stylesheet" type="text/css" href="css/card.css">
+    <link rel="stylesheet" type="text/css" href="css/dimmer.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/icon.css">
+    <link rel="stylesheet" type="text/css" href="css/image.css">
+    <link rel="stylesheet" type="text/css" href="css/label.css">
+    <link rel="stylesheet" type="text/css" href="css/popup.css">
+    <link rel="stylesheet" type="text/css" href="css/rating.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/reveal.css">
+    <link rel="stylesheet" type="text/css" href="css/site.css">
+    <link rel="stylesheet" type="text/css" href="css/transition.css">
+
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/input.css">
+    <link rel="stylesheet" type="text/css" href="css/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="css/divider.css">
+    <link rel="stylesheet" type="text/css" href="css/card.css">
+    <link rel="stylesheet" type="text/css" href="css/reveal.css">
+    <link rel="stylesheet" type="text/css" href="css/dimmer.css">
+    <link rel="stylesheet" type="text/css" href="css/rating.css">
+    <link rel="stylesheet" type="text/css" href="css/transition.css">
+
+
+    <!--- Component JS -->
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/iframe-content.js"></script>
+    <script src="js/transition.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/dimmer.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/rating.js"></script>
+    <!--assets/library-->
+

@@ -1,0 +1,11 @@
+Enter Note:PHP: 
+stands for personal home page and is a hypertext preprocessor. It was made in 1994 by Rasmus Lerdorf. it was made fro
+m several Common Gateway Interface (CGI) programs in C, and is mainly used as a mediator between the front-end (browser html, css,js) and back-end(database, files). In order to use PHP, you must insall XAMPP(cross-platform apache mariaDB, php,python and perl). start the xampp control panel, then enter the correct apache configuration by choosing a port no in the httpd.conf file. then connect to the databases. you can then access the database through phpmyadmin which should be downloaded from phpmyadmin.net, remember to donate :) 
+
+some of the main things to do with php are:
+1) connect to a database, 
+2) CRUD a database i.e. inserting, searching and returning info and insert in html. 
+3) form-validations, It usually involves the use of mysqli_... command which also requires knowledge of MYSQL. it is therefore recommended that you learn SQL first. before learning php. otherwise youre limited to just file manipulation.
+for backend webdevelopment
+
+note that besides database manipulation, php can also acess and modify files in other formats such as txt, csv excel. just read about a comparison between PHPexcel vs PHPSpreadsheet, which seem like frameworks.

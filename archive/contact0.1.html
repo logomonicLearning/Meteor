@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2019 by anonymous (http://jsbin.com/pilarixoru/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css" rel="stylesheet" type="text/css" />
+
+  
+  <head>
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Login Example - Semantic</title>
+<!---pure buttons-->
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+<!---my addition-->
+ <link rel="stylesheet" href="css/base.css" />
+ <link rel="stylesheet" href="css/slider.css" />
+ 
+ <link rel="stylesheet" href="css/base.css" />
+ <link rel="stylesheet" href="css/slider.css" />
+   <link rel="stylesheet" type="text/css" href="css/button.css">
+   <!-- <link rel="stylesheet" type="text/css" href="css/card.css"> -->
+   <!-- <link rel="stylesheet" type="text/css" href="css/dimmer.css"> -->
+   <!-- <link rel="stylesheet" type="text/css" href="css/grid.css"> -->
+   <link rel="stylesheet" type="text/css" href="css/icon.css">
+   <!-- <link rel="stylesheet" type="text/css" href="css/image.css"> -->
+   <link rel="stylesheet" type="text/css" href="css/label.css">
+   <!-- <link rel="stylesheet" type="text/css" href="css/popup.css"> -->
+   <!-- <link rel="stylesheet" type="text/css" href="css/rating.css"> -->
+   <link rel="stylesheet" type="text/css" href="css/reset.css">
+   <!-- <link rel="stylesheet" type="text/css" href="css/reveal.css"> -->
+   <link rel="stylesheet" type="text/css" href="css/site.css">
+   <link rel="stylesheet" type="text/css" href="css/transition.css">
+ <link rel="stylesheet" href="css/form">  
+   <!-- <link rel="stylesheet" type="text/css" href="css/menu.css"> -->
+   <link rel="stylesheet" type="text/css" href="css/input.css">
+   <!-- <link rel="stylesheet" type="text/css" href="css/dropdown.css"> -->
+   <link rel="stylesheet" type="text/css" href="css/divider.css">
+  
+ <!-- new -->
+ <!-- <link rel="stylesheet" type="text/css" href="../dist/components/list.css"> -->
+
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css" rel="stylesheet" type="text/css" />
+ 
+
+<!---default-->
+
+ <link rel="stylesheet" type="text/css" href="css/reset.css">
+ <link rel="stylesheet" type="text/css" href="css/site.css">
+
+ <link rel="stylesheet" type="text/css" href="css/container.css">
+ <!-- <link rel="stylesheet" type="text/css" href="css/grid.css"> -->
+ <link rel="stylesheet" type="text/css" href="css/header.css">
+ <!-- <link rel="stylesheet" type="text/css" href="css/image.css"> -->
+ <!-- <link rel="stylesheet" type="text/css" href="css/menu.css"> -->
+
+ <link rel="stylesheet" type="text/css" href="css/divider.css">
+ <link rel="stylesheet" type="text/css" href="css/segment.css">
+ <link rel="stylesheet" type="text/css" href="css/form.css">
+ <link rel="stylesheet" type="text/css" href="css/input.css">
+ <link rel="stylesheet" type="text/css" href="css/button.css">
+ <!-- <link rel="stylesheet" type="text/css" href="css/list.css"> -->
+ <link rel="stylesheet" type="text/css" href="css/message.css">
+ <link rel="stylesheet" type="text/css" href="css/icon.css">
+
+
+
+<!--default-->
+ <script src="js/jquery.min.js"></script>
+ <script src="js/form.js"></script>
+ <script src="js/transition.js"></script>
+
+
+
+
+<!---my addition-->
+ <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script>
+  <script src="js/iframe-content.js"></script>
+  <script src="js/transition.js"></script>
+  <script src="js/dropdown.js"></script>
+  <script src="js/dimmer.js"></script>
+  <script src="js/popup.js"></script>
+  <script src="js/rating.js"></script>
+
+  <!-- new -->
+  <!-- <script src="js/form.js"></script> -->
+  <style type="text/css">
+    body {
+      background-color: #DADADA;
+    }
+    body > .grid {
+      height: 100%;
+    }
+    .image {
+      margin-top: -100px;
+    }
+    .column {
+      max-width: 450px;
+    }
+  </style>
+
+  <title>JS Bin</title>
+
+  
+<style id="jsbin-css">
+.container{
+  width:80%;
+  position:relative;
+  margin:auto;
+  /* border:1px solid black; */
+  
+  
+}
+
+.wrapper{
+  height:auto;
+  
+}
+
+
+
+.grid{
+  display:grid;
+  grid-template-rows:repeat(6,1fr);
+  grid-template-columns:repeat(3,1fr);
+  grid-gap:15px;
+}
+
+section{
+  border:1px solid green;
+}
+
+#opening, #address, #service-ares, #call, #mail, #share{
+  grid-column:1/2
+}
+
+#opening{
+  grid-row:1 /2;
+    
+}
+
+#address{
+  grid-row:2 /3;
+
+  border:1px solid
+}
+#service-area{
+  grid-row:3/4;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+
+}
+
+#call{
+  
+}
+#mail{
+  
+}
+#share{
+  
+}
+
+#map, #form{
+  grid-column:2 /span 2;
+}
+#map{
+  grid-row:1 /span 2;
+}
+#form{
+  grid-row:3 /span 4;
+}
+
+
+
+
+</style>
+</head>
+<body>
+<main>
+<div class="container">
+  <div class="wrapper grid">
+    <section id="opening">opening</section>
+    <section id="address">address</section>
+    <section id="service-area"><button>Service Area</button></section>
+    <section id="call">call</section>
+    <section id="mail">mail</section>
+    <section id="share">share</section>
+    <section id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2629977.6105622104!2d15.369873000000002!3d49.93000800000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2scz!4v1552141263491" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></section>
+    <section id="form"><form class="ui large form">
+
+        <div class="field">
+         
+          <!-- <label>How can we help   you?</label>
+          <div class="ui selection dropdown">
+            <input type="hidden" name="reason[type]">
+            <div class="default text">Please select</div>
+            <i class="dropdown icon"></i>
+            
+            <div class="menu">
+              <div class="item" data-value="laptop-repair">
+                <i class="laptop icon"></i>
+                Laptop Repair
+              </div>
+              <div class="item" data-value="desktop-repair">
+                <i class="desktop icon"></i>
+                Desktop Repair
+              </div>
+              <div class="item" data-value="virus-removal">
+                <i class="bug icon"></i>
+                Virus Removal
+              </div>
+              <div class="item" data-value="data-recovery">
+                <i class="hdd icon"></i>
+                Data Recovery
+              </div>
+              <div class="item" data-value="other">
+                <i class="other icon"></i>
+                could be anything from 
+              </div>
+            </div>            
+          </div> -->
+        <label for="enquiry">How can we help?</label>
+        <select name="enquiry" id="enquiry">
+          <option>Laptop Repair</option>
+          <option>Desktop Repair</option>
+          <option>Virus Removal</option>
+          <option>Data Recovery</option>
+          <!-- <option>Medium</option> -->
+          <!-- <option selected="selected">Medium</option> -->
+        </select>
+
+        </div>
+
+        <div class="field">
+            <label>Make/Model</label>
+            <input type="text" name="model" placeholder="Make/Model">
+        </div>
+        
+      <div class="field">
+          <label>Brief Description</label>
+          <textarea></textarea>
+        </div>
+
+        <div class="field">
+          <label>Name</label>
+          <div class="two fields">
+            <div class="field">
+              <input type="text" name="first-name" placeholder="First Name">
+            </div>
+            <div class="field">
+              <input type="text" name="shipping" placeholder="Last Name">
+            </div>
+          </div><!-- end of two field  -->
+        </div><!-- end of field (one field containing two fieldcontainer with 2 fields) -->
+
+        <div class="field">
+            <label>Phone</label>
+            <input type="text" name="phone" placeholder="Phone number">
+        </div>
+
+        <div class="field">
+            <label>Email</label>
+            <input type="text" name="email" placeholder="Email">
+        </div>
+         
+         <div class="ui segment">
+          <div class="field">
+            <div class="ui checkbox">
+              <input type="checkbox" name="gift" tabindex="0">
+              <label>I consent that meteor saves your data to contact you</label>
+            </div>
+          </div>
+        </div><!--end of ui segment  -->
+
+        <div class="ui primary button" tabindex="0">Submit Order</div>
+
+      <div class="ui error message"></div>
+    </form></section>
+  </div>
+</div>
+  </main>
+<script id="jsbin-javascript">
+$(document).ready(function() {
+      $('.ui.form')
+        .form({
+          fields: {
+            email: {
+              identifier  : 'email',
+              rules: [
+                {
+                  type   : 'empty',
+                  prompt : 'Please enter your e-mail'
+                },
+                {
+                  type   : 'email',
+                  prompt : 'Please enter a valid e-mail'
+                }
+              ]
+            },
+            password: {
+              identifier  : 'password',
+              rules: [
+                {
+                  type   : 'empty',
+                  prompt : 'Please enter your password'
+                },
+                {
+                  type   : 'length[6]',
+                  prompt : 'Your password must be at least 6 characters'
+                }
+              ]
+            }
+          }
+        });
+      
+      $("#enquiry").selectmenu();
+
+    })
+
+      // $('#form .dropdown.icon').click(function(){
+      //   $(".menu").show()
+      // });
+      
+</script>
+</body>
+</html>
