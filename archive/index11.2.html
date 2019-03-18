@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Theming - Semantic</title>
+
+
+  <!-- NORMALISE -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
+
+  <!-- purecss buttons -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+
+  <!-- slider links -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/slider.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css" rel="stylesheet" type="text/css" />
+
+  <!--- my Style -->
+
+    <link rel="stylesheet" type="text/css" href="css/myStyle/mainStyle.css">
+
+  <!--- Site CSS -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/site.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+
+    <!--- Component CSS -->
+    <link rel="stylesheet" type="text/css" href="css/icon.css">
+    <link rel="stylesheet" type="text/css" href="css/button.css">
+    <link rel="stylesheet" type="text/css" href="css/card.css">
+    <link rel="stylesheet" type="text/css" href="css/label.css">
+    <link rel="stylesheet" type="text/css" href="css/image.css">
+    <link rel="stylesheet" type="text/css" href="css/reveal.css">
+    <link rel="stylesheet" type="text/css" href="css/dimmer.css">
+    <link rel="stylesheet" type="text/css" href="css/rating.css">
+    <link rel="stylesheet" type="text/css" href="css/transition.css">
+    <link rel="stylesheet" type="text/css" href="css/popup.css">
+
+    <!-- ../../dist/components/ -->
+    
+    <link href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script>
+    
+  
+    <!-- libraries -->
+    <script src="js/assets/library/jquery.min.js"></script>
+    <script src="js/assets/library/iframe-content.js"></script>
+
+    <!-- components -->
+    <script type="text/javascript" src="js/assets/components/popup.js"></script>
+    <script type="text/javascript" src="js/assets/components/dimmer.js"></script>
+    <script type="text/javascript" src="js/assets/components/rating.js"></script>
+    <script type="text/javascript" src="js/assets/components/transition.js"></script>
+
+
+
+
+  
+
+  <!--- Example Javascript -->
+  <script>
+  // $(document).ready(function() {
+  //     $('.pure-menu-list .pure-menu-has-children').dropdown({
+  //       on: 'hover'
+  //     });
+
+  //     $('.ui.menu a.item')
+  //       .on('click', function() {
+  //         $(this)
+  //           .addClass('active')
+  //           .siblings()
+  //           .removeClass('active')
+  //         ;
+  //       })
+  //     ;
+  //   })
+  // ;
+  $('#back-to-top').click(function(){
+      $('#nav-top').animate({
+          scrollTop: 0
+      }, 3000);
+  });
+
+
+
+  </script>
+</head>
+<body>
+
+<header id="the-top">
+  <div class="header-wrapper"> 
+    <div class="container">
+      <div class="wrapper" id="top-header">
+        <div id="banner"><img src="#"></div>
+        
+        <div class="contact-info">
+            <span><i class="ui icon"> </i>0207 555 999</span>
+            <span><i class="ui icon"> </i>admin@meteorrepair.com</span>
+            <span><i class="ui icon"> </i>123 Fake Street London F314</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="header-wrapper"> 
+  <nav id="nav-top" class="container">
+    <div class="pure-menu pure-menu-horizontal">
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item pure-menu-selected">
+              <a href="#" class="pure-menu-link">Home</a>
+            </li>
+            
+            <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                <a href="#" id="menuLink1" class="pure-menu-link">Services</a>
+                <ul class="pure-menu-children">
+                  <li class="pure-menu-item"><a href="#" class="pure-menu-link">Laptop Repair</a></li>
+                  <li class="pure-menu-item"><a href="#" class="pure-menu-link">PC Repair</a></li>
+                  <li class="pure-menu-item"><a href="#" class="pure-menu-link">Data Recovery</a></li>
+                  <li class="pure-menu-item"><a href="#" class="pure-menu-link">Virus Removal</a></li>
+                  <li class="pure-menu-item"><a href="#" class="pure-menu-link">Hardware Upgrade</a></li>
+                </ul>
+            </li>
+            <li class="pure-menu-item"><a class="pure-menu-link">Products</a></li>
+            <li class="pure-menu-item"><a class="pure-menu-link">About</a></li>
+            <li class="pure-menu-item"><a class="pure-menu-link">Contact</a></li>
+            <li class="pure-menu-item"><a class="pure-menu-link">FAQ</a></li>
+        </ul>
+    </div>    
+</nav> <!-- end of nav -->
+</div>
+</header>
+
+<header>
+  <div class="container">
+      <div id=slider class="slider wrapper">
+              <div class="slide-viewer">
+                <div class="slide-group">
+                  <div class="slide slide-1">
+                    <img src="images/icons/icons8-bug-100.png" alt="No two are the same" />
+                  </div>
+                  <div class="slide slide-2">
+                    <img src="images/icons/icons8-hdd-64.png" alt="Monsieur Mints"  />
+                  </div>
+                  <div class="slide slide-3">
+                    <img src="images/icons/icons8-hdd-96.png" alt="The Flower Series"  />
+                  </div>
+                  <div class="slide slide-4">
+                    <img src="images/icons/icons8-laptop-80.png" alt="Salt o' The Sea"  />
+                  </div>
+                </div>
+              </div>
+              <div class="slide-buttons"></div>
+            </div>
+  </div>
+</header> <!-- end of 2nd header(slider) perhaps make a separate file and only include in the index -->
+
+
+
+<main>
+  <div class="container">
+    <section class="wrapper" id="repair-process">
+      
+      <div class="repair-process-item">
+        <i class="ui icon phone"></i>
+
+        <h3>You Call</h3>
+        <p>Business Emergency Call? Tell us about your desktops, laptops or network issues you experiencing and we will resolve it, including domain server networks support</p>
+
+      </div>  
+      <div class="repair-process-item">
+        <i class="ui icon car"></i>
+        <h3>We Visit</h3>
+        <p>We know how often it is inconvenient to bring your business computers to us. That’s why we can visit your Business office and fix all desktops , servers and network communications</p>
+      </div>  
+      <div class="repair-process-item">
+        <i class="ui icon cog"></i>
+        <h3>We Fix</h3>
+        <p>We will get your desktops, laptops, IPAds fixed, and in addition to that we provide a 90 day satisfaction guarantee!, we can arraneg collection of you hardware</p>
+
+      </div>  
+
+    </section>
+  </div>
+  
+      
+  <div class="container" id="advert-container">
+    <section class="wrapper" id="advert">
+      
+      <div class="ui card">
+          <div class="content">
+            <div class="header">
+              <img src="images/icons/icons8-laptop-80.png">
+              Laptop Repair
+            </div>
+            <div class="description">
+              We will repair your laptop good and proper!
+              <!-- <img src="../assets/images/wireframe/paragraph.png" class="ui wireframe image"> -->
+            </div>
+          </div>
+          <div class=" buttons">
+            <a style="color:grey" href="" class="pure-button button-bottom">
+              Contact Us
+            </a>
+            <div class="pure-button button-bottom">
+              More Info
+            </div>
+          </div>
+        </div>
+
+        <div class="ui card">
+            <div class="content">
+              <div class="header">
+                <img src="images/icons/icons8-workstation-512.png" width=70px>
+                Desktop Repair
+              </div>
+              <div class="description">
+                We will repair your laptop good and proper!
+                <!-- <img src="../assets/images/wireframe/paragraph.png" class="ui wireframe image"> -->
+              </div>
+            </div>
+            <div class="buttons">
+              <a href="" class="pure-button button-bottom">
+                Contact Us
+              </a>
+              <div class="pure-button button-bottom">
+                More Info
+              </div>
+            </div>
+          </div>
+
+          <div class="ui card">
+              <div class="content">
+                <div class="header">
+                  <img src="images/icons/icons8-hdd-64.png" width=70px>
+                  Data Recovery
+                </div>
+                <div class="description">
+                  We will repair your laptop good and proper!
+                  <!-- <img src="../assets/images/wireframe/paragraph.png" class="ui wireframe image"> -->
+                </div>
+              </div>
+              <div class="buttons">
+                <a href="" class="pure-button button-bottom">
+                  Contact Us
+                </a>
+                <div class="pure-button button-bottom">
+                  More Info
+                </div>
+              </div>
+            </div>
+
+            <div class="ui card">
+                <div class="content">
+                  <div class="header">
+                    <img src="images/icons/icons8-bug-100.png" width=70px>
+                    Virus Removal
+                  </div>
+                  <div class="description">
+                    Is your laptop bugged out? dont worry
+                    <!-- <img src="../assets/images/wireframe/paragraph.png" class="ui wireframe image"> -->
+                  </div>
+                </div>
+                <div class="buttons">
+                  <a href="" class="pure-button button-bottom">
+                    Contact Us
+                  </a>
+                  <div class="pure-button button-bottom"  >
+                    More Info
+                  </div>
+                </div>
+              </div>
+    </section>
+
+
+
+
+
+
+
+
+  </div> <!-- end of 2nd cont -->
+
+
+  <div style="display:none" class="container" id="advert-container2"> 
+    <section class="wrapper" id="advert2">
+       <div class="ui card">
+       <a href="">
+         <figure class="image">
+           <img src="icons8-laptop-80.png" width=70px>
+         </figure>
+         <div class="content">
+           <h2 class="header">Laptop Repair</h2>
+           <div class="description">
+             We will repair your laptop good and proper!
+           </div>
+         </div>
+         </a>
+      </div><!-- end of first card -->
+
+      <div class="ui card">
+         <a href="">
+         <figure class="image">
+           <img src="icons8-workstation-512.png" width=70px >
+         </figure>
+         <div class="content">
+           <h2 class="header">PC Repairs</h2>
+           <div class="description">
+             We will repair your laptop good and proper!
+           </div>
+         </div>
+         </a>
+      </div><!-- end of 2nd card -->
+
+      <div class="ui card">
+         <a href="">
+         <figure class="image">
+           <img src="icons8-hdd-64.png" width=70px >
+         </figure>
+         <div class="content">
+           <h2 class="header">Data Recovery</h2>
+           <div class="description">
+             Did you just erase your life's work? dont worry, we have a solution to retrieve all which you thought was lost.
+           </div>
+         </div>
+         </a>
+      </div><!-- end of first card -->
+
+      <div class="ui card">
+         <a href="">
+         <figure class="image">
+           <img src="icons8-bug-100.png" width=70px>
+         </figure>
+         <div class="content">
+           <h2 class="header">Virus Removal</h2>
+           <div class="description">
+             Are you losing the battle with a notorious virus? Dont worry, we are pc doctors and have the cure.
+           </div>
+         </div>
+         </a>
+      </div><!-- end of first card -->
+
+     </section>
+
+  </div>
+</main>
+
+
+  <footer>
+    <a id="back-to-top" href="#the-top"><span>Back to top</span></a>
+    <div class="container">
+      <div class="wrapper" id="main-block">
+            
+            <!-- has 3 main parts, mission, links and opening hours, the first and 3rd parts should be 25% and the center col should be 50%  -->
+
+            <div id="mission">
+                Our mission is to provide those learning to code with the right mix of learning strategies to become self sufficient learners. 
+            </div>
+
+            <div id="footer-links"> 
+                <ul>  
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="#">Study Music</a></li>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Dsiclaimer</a></li>
+                </ul>
+                <ul>  
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="#">Study Music</a></li>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Dsiclaimer</a></li>
+                </ul>
+            </div>
+            
+            <div id="opening-hours">
+              <h4 style="text-transform:uppercase">Opening hours:</h4>
+                  <span>MONDAY 10:00 - 18:00</span>
+                  <span>TUESDAY 10:00 - 18:00</span>
+                  <span>WEDNESDAY 10:00 - 18:00</span>
+                  <span>THURSDAY 10:00 - 18:00</span>
+                  <span>FRIDAY 10:00 - 18:00</span>
+                  <span>SATURDAY 11:00 - 15:00</span>
+                  <span>SUNDAY CLOSED</span>
+            </div>
+
+        </div><!-- end of mainBlock  -->
+    <br>  
+    
+    
+    
+    </div><!--end of container  -->
+    <div id="bottom-block" class="wrapper">
+        <div class="container">  
+            <div class="copywright"><div>&copy; 2019 CodeMode</div> <a href="#the-top">Terms of use</a> <a href="">Privacy policy</a></div>
+        </div>
+    </div><!-- endo of bottom block  -->
+
+  </footer>
+	<script>
+		// $(window).scroll(function() {
+		// 	$(function(){$("#back-to-top").click(function(){
+		// 		$("html,body").animate({scrollTop:$("#the-top").offset().top},"1000");
+		// 		return false
+		// 	})
+		// })
+		$(window).scroll(function() {
+		    if ($(this).scrollTop() > 50 ) {
+		        $('.scrolltop:hidden').stop(true, true).fadeIn();
+		    } else {
+		        $('.scrolltop').stop(true, true).fadeOut();
+		    }
+		});
+
+		$(document).on("click","#back-to-top", function(){
+			$("html,body").animate({scrollTop:$("#the-top").offset().top},"1000");
+			return false;
+		})
+		
+		/*$(document).ready(function(){
+			$("#back-to-top").click(function(){$("html,body").animate({scrollTop:$("#the-top").offset().top},"1000");
+				return false;
+			})
+		})*/
+
+		$(function(){})
+
+
+	</script>
+</body>
+<script src="js\assets\components\sliderLogic.js"></script>
+</html>
