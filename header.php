@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="css/slider.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css" rel="stylesheet" type="text/css" />
   <!--- Component JS -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   
 
   <!--- Site CSS -->
@@ -43,15 +44,26 @@
     <link rel="stylesheet" type="text/css" href="css/rating.css">
     <link rel="stylesheet" type="text/css" href="css/transition.css">
     <link rel="stylesheet" type="text/css" href="css/popup.css">
+    <link rel="stylesheet" type="text/css" href="css/myStyle/faqStyle.css">
+    <link rel="stylesheet" href="css/form.css">  
+    <link rel="stylesheet" type="text/css" href="css/message.css">
+    <link rel="stylesheet" type="text/css" href="css/myStyle/contactStyle.css">
 
     <!-- ../../dist/components/ -->
     
     <link href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="css/myStyle/mainStyle.css">
-    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script>
     
+
+
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script> 
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+   
+  
+  <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+  <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
     
     <!--- Component JS -->
   <!-- <script src="../assets/library/jquery.min.js"></script>
@@ -65,7 +77,9 @@
     <script type="text/javascript" src="js/assets/components/dimmer.js"></script>
     <script type="text/javascript" src="js/assets/components/rating.js"></script>
     <script type="text/javascript" src="js/assets/components/transition.js"></script>
-
+    <script src="js/form.js"></script>
+    <script src="js/transition.js"></script>
+    <script src="js/dropdown.js"></script>
 
 
 
@@ -138,7 +152,7 @@
             </li>
             <li class="pure-menu-item"><a class="pure-menu-link" href="products.php">Products</a></li>
             <li class="pure-menu-item"><a class="pure-menu-link">About</a></li>
-            <li class="pure-menu-item"><a class="pure-menu-link">Contact</a></li>
+            <li class="pure-menu-item"><a class="pure-menu-link" href="contact.php">Contact</a></li>
             <li class="pure-menu-item"><a class="pure-menu-link" href="faq.php">FAQ</a></li>
         </ul>
     </div>    

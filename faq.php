@@ -3,10 +3,10 @@
     include_once ("header.php")
 ?>
 		
-	<link rel="stylesheet" type="text/css" href="css/myStyle/faqStyle.css">
+	
 
 	
-	
+	<main class="faq">
 
 	<div class="container">
 	<div id="accordion">
@@ -59,7 +59,7 @@
 	 	</div> 
 	 
 	 </div>
-	 
+	 </main>
 	 
 	 <script>
 	$(document).ready(function(){

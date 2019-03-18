@@ -13,18 +13,18 @@
                 <ul>  
                     <li><a href="about.php">About</a></li>
                     <li><a href="contact.php">Contact</a></li>
-                    <li><a href="#">Study Music</a></li>
+                    <li><a href="#">FAQ</a></li>
                     <li><a href="#">Store</a></li>
                     <li><a href="#">Legal</a></li>
                     <li><a href="#">Dsiclaimer</a></li>
                 </ul>
                 <ul>  
-                    <li><a href="about.php">About</a></li>
-                    <li><a href="contact.php">Contact</a></li>
-                    <li><a href="#">Study Music</a></li>
-                    <li><a href="#">Store</a></li>
-                    <li><a href="#">Legal</a></li>
-                    <li><a href="#">Dsiclaimer</a></li>
+                    <li><a href="about.php">Repair Laptop</a></li>
+                    <li><a href="contact.php">Repair Desktop</a></li>
+                    <li><a href="#">Virus Removal</a></li>
+                    <li><a href="#">Data Recovery</a></li>
+                    <li><a href="#">System Optimisation</a></li>
+                    <li><a href="#"></a></li>
                 </ul>
             </div>
             
@@ -80,13 +80,6 @@
 
 		
 
-	$( function() {
-	  $("#accordion" ).accordion();
-	  $("#accordion h3").addClass("h3-style");
-	  // $("#accordion h3").prepend('<span class="ui-icon-caret-1-e"></span>')
-	  
-	} );
-	
 
 
 	</script>

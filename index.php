@@ -45,7 +45,7 @@
             </div>
           </div>
           <div class=" buttons">
-            <a style="color:grey" href="" class="pure-button button-bottom">
+            <a style="color:grey" href="contact.php" class="pure-button button-bottom">
               Contact Us
             </a>
             <div class="pure-button button-bottom">
@@ -66,7 +66,7 @@
               </div>
             </div>
             <div class="buttons">
-              <a href="" class="pure-button button-bottom">
+              <a href="contact.php" class="pure-button button-bottom">
                 Contact Us
               </a>
               <div class="pure-button button-bottom">
@@ -87,7 +87,7 @@
                 </div>
               </div>
               <div class="buttons">
-                <a href="" class="pure-button button-bottom">
+                <a href="contact.php" class="pure-button button-bottom">
                   Contact Us
                 </a>
                 <div class="pure-button button-bottom">
@@ -108,7 +108,7 @@
                   </div>
                 </div>
                 <div class="buttons">
-                  <a href="" class="pure-button button-bottom">
+                  <a href="contact.php" class="pure-button button-bottom">
                     Contact Us
                   </a>
                   <div class="pure-button button-bottom"  >

@@ -1,0 +1,79 @@
+
+    .contact .grid {
+      height: 100%;
+    }
+    .contact .image {
+      margin-top: -100px;
+    }
+    .contact .column {
+      max-width: 450px;
+    }
+  
+.contact .container{
+  width:80%;
+  position:relative;
+  margin:auto;
+  /* border:1px solid black; */
+  
+  
+}
+
+.contact .wrapper{
+  height:auto;
+  
+}
+
+
+
+.contact .grid{
+  display:grid;
+  grid-template-rows:repeat(6,1fr);
+  grid-template-columns:repeat(3,1fr);
+  grid-gap:15px;
+}
+
+.contact section{
+  border:1px solid green;
+}
+
+#opening, #address, #service-ares, #call, #mail, #share{
+  grid-column:1/2
+}
+
+#opening{
+  grid-row:1 /2;
+    
+}
+
+#address{
+  grid-row:2 /3;
+
+  border:1px solid
+}
+.contact #service-area{
+  grid-row:3/4;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+
+}
+
+#call{
+  
+}
+#mail{
+  
+}
+#share{
+  
+}
+
+#map, #form{
+  grid-column:2 /span 2;
+}
+#map{
+  grid-row:1 /span 2;
+}
+#form{
+  grid-row:3 /span 4;
+}
