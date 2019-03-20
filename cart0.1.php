@@ -4,24 +4,51 @@ include_once "header.php";
 include_once "data_model.php";
 
 
-$cart_arr =get_cart_details();
-$grand_total = null;
+		
+?>
+
+
+
+	<link rel="stylesheet" type="text/css" href="css/myStyle/productsStyle.css">
+	
+<main class="products">
+  <div class="container">
+    <div class="wrapper">
+      <div class="grid">	
+	<?php 
+		$cart_arr =get_cart_details();
+		$grand_total = null;
 
 
 		if(!empty($cart_arr)){
 			foreach($cart_arr as $cart_product){
 				$grand_total += $cart_product['Total'];
-		
-?>
+	?>
 
+	<div class="card cart_product">
+		<figure class="image cart_product_image">
+			<!-- <img width="200px" src="images/T90B_14.1_inch.jpg" alt=""> -->
+			<img width="200px" src="images/<?=$cart_product['product_image']?>"/>
+		</figure>
+		<div class="content">
+			<h3><?=$cart_product['product_name']?></h3>
+			<div class="description">
+				<?=$cart_product['product_specifications']?>
+			</div>
+		</div>
+		<div class="buy-it">
+			<span class="price"><?=$cart_product['product_price']?></span><button class="pure-button button-primary" ><i class="ui icon cart"></i>Add to cart</button>	
+		</div>
+	</div>
 
-    <div class="cart_product">
+   <!--  <div class="cart_product">
 
 					<div class="cart_product_image">
 						<img src="images/<?=$cart_product['product_image']?>"/>
-					</div> <!-- End of cart_product_image div -->
+					</div>  -->
+					<!-- End of cart_product_image div -->
 
-				<div class="cart_product_details">
+				<!-- <div class="cart_product_details">
 
 					<p><br>Product : <?=$cart_product['product_name']?></p>
 					<p>Price Per Item : &pound; <?=$cart_product['product_price']?></p>
@@ -38,12 +65,13 @@ $grand_total = null;
 					<input type="submit"  class="btn_delete" name="delete" value="Delete Item">
 					</form><br>
 				
-				</div> <!-- End of cart_product_details div -->
+				</div>  -->
+				<!-- End of cart_product_details div -->
 
-  </div><!-- End of cart_product div -->
+  <!-- </div> -->
+  <!-- End of cart_product div -->
 
-
-  <?php
+<?php
 	  }	# End of foreach loop
 	} else {
 		echo "<div class='error'>You do not have any item in the basket!<a href='product.php'> Shop Now! </a></div>";
@@ -54,15 +82,21 @@ $grand_total = null;
 
 	if(!empty($grand_total)){?>
 
+			
+
 		<div class="grand_total">
 			<b> Grand Total: &pound <?=$grand_total?><br><br>
 			<a href="checkout.php">
 				<button  class="btn_checkout">Go to Checkout </button>
-			</a>
+			</a>	
 		</div> <!-- End of grand_total div -->
 
 <?php } ?>
 
+			</div>
+		</div>
+	</div>
+</main>
 
 
 
