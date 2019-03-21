@@ -49,6 +49,7 @@
 		</div>
 		
 
+<<<<<<< HEAD:products.php
 
 		<div class="product" style="display:none">
 			<div class="product_image">
@@ -79,6 +80,10 @@
 			</form>
 			</div> <!-- End of product_details div -->
 		</div> <!-- End of product div -->
+=======
+		
+		
+>>>>>>> 574226ea8852b1005b27ef2d2841eb8ef0febfd7:archive/products.php
 		
 		
       </div>
@@ -87,6 +92,7 @@
   </div>
 </main>
 
+<<<<<<< HEAD:products.php
 
 <?php 
 		} // End of foreach loop
@@ -99,6 +105,8 @@
 
 
 
+=======
+>>>>>>> 574226ea8852b1005b27ef2d2841eb8ef0febfd7:archive/products.php
 <?php
 	if(isset($_POST['btn_cart'])){
 
