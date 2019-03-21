@@ -1,19 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  
-
-
-
-
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <title>Theming - Semantic</title>
-
-
-
-
   <!-- NORMALISE -->
   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
 
@@ -27,7 +18,6 @@
   <!--- Component JS -->
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   
-
   <!--- Site CSS -->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/site.css">
@@ -48,20 +38,13 @@
     <link rel="stylesheet" href="css/form.css">  
     <link rel="stylesheet" type="text/css" href="css/message.css">
     <link rel="stylesheet" type="text/css" href="css/myStyle/contactStyle.css">
-
-    <!-- ../../dist/components/ -->
-    
+    <!-- ../../dist/components/ -->  
     <link href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="css/myStyle/mainStyle.css">
     
-
-
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script> 
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-   
-  
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>  
   <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
   <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
     
@@ -73,21 +56,20 @@
     <script src="js/assets/library/iframe-content.js"></script>
 
     <!-- components -->
-    <script type="text/javascript" src="js/assets/components/popup.js"></script>
-    <script type="text/javascript" src="js/assets/components/dimmer.js"></script>
     <script type="text/javascript" src="js/assets/components/rating.js"></script>
     <script type="text/javascript" src="js/assets/components/transition.js"></script>
     <script src="js/form.js"></script>
     <script src="js/transition.js"></script>
     <script src="js/dropdown.js"></script>
 
-
-
-
-
- 
   <!--- Example Javascript -->
   <script>
+  $('#back-to-top').click(function(){
+      $('#nav-top').animate({
+          scrollTop: 0
+      }, 3000);
+  });
+
   // $(document).ready(function() {
   //     $('.pure-menu-list .pure-menu-has-children').dropdown({
   //       on: 'hover'
@@ -104,15 +86,9 @@
   //     ;
   //   })
   // ;
-  $('#back-to-top').click(function(){
-      $('#nav-top').animate({
-          scrollTop: 0
-      }, 3000);
-  });
-
-
 
   </script>
+
 </head>
 <body>
 
