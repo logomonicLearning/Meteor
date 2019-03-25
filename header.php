@@ -58,7 +58,8 @@
     <!-- components -->
     <script type="text/javascript" src="js/assets/components/rating.js"></script>
     <script type="text/javascript" src="js/assets/components/transition.js"></script>
-    <script src="js/form.js"></script>
+    <!-- doesnt work so cancelled -->
+    <!-- <script src="js/assets/components/form.js"></script>   -->
     <script src="js/transition.js"></script>
     <script src="js/dropdown.js"></script>
 

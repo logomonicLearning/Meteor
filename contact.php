@@ -15,7 +15,7 @@
     <section id="share">share</section>
     <section id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2629977.6105622104!2d15.369873000000002!3d49.93000800000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2scz!4v1552141263491" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></section>
     <section id="form">
-      <form class="ui large form">
+      <form id="inner-form" class="ui large form">
         <div class="ui error message"></div>
         <div class="field">
         
@@ -80,118 +80,134 @@
   </div>
 </div>
   </main>
-<script id="jsbin-javascript">
+<script>
+document.getElementById("submit").addEventListener("submit", function(){
+  e.preventDefault();
+  console.log('hello')
+  validateForm();
+})
+
+var errEnquiry, errModel, errFName, errLName, errEmail, errPhone, errConsent;
+
+function validateForm(){
+  var enquiry, model, firstName, lastName, email, phone, consent;
+  
+  enquiry=document.getElementById('enquiry').value;
+  model==document.getElementById('model').value;
+  firstName=document.getElementById('first-name').value;
+  lastName=document.getElementById('last-name').value;
+  email=document.getElementById('email').value;
+  phone=document.getElementById('phone').value;
+  consent=document.getElementById('consent').value;
+
+  if(enquiry==null || enquiry.value==""){
+    hasError=true;
+    errEnquiry="Please select the nature of your enquiry";
+    enquiry.focus
+  }
+}
+
+  function showErrors(){
+
+  }
+
+
+
 $(document).ready(function() {
-      // $('.ui.form')
-      //   .form({
-      //     fields: {
-      //       email: {
-      //         identifier  : 'email',
-      //         rules: [
-      //           {
-      //             type   : 'empty',
-      //             prompt : 'Please enter your e-mail'
-      //           },
-      //           {
-      //             type   : 'email',
-      //             prompt : 'Please enter a valid e-mail'
-      //           }
-      //         ]
-      //       },
-      //       password: {
-      //         identifier  : 'password',
-      //         rules: [
-      //           {
-      //             type   : 'empty',
-      //             prompt : 'Please enter your password'
-      //           },
-      //           {
-      //             type   : 'length[6]',
-      //             prompt : 'Your password must be at least 6 characters'
-      //           }
-      //         ]
-      //       }
-      //     }
-      //   });
-      $('.ui.form')
-              .form({
-                fields: {
-                  enquiry, model, first-name, last-name, email, phone, consent
+    
+
+
+
+    //NOT WORKING    
+    //   $('.ui.form')
+    //           .form({
+    //             fields: {
+    //               // enquiry, model, first-name, last-name, email, phone, consent
                   
-                  enquiry: {
-                    identifier  : 'enquiry',
-                    rules: [
-                      {
-                        type   : 'empty',
-                        prompt : 'Please enter the purpose of your enquiry'
-                      }
-                    ]
-                  },
+    //               enquiry: {
+    //                 identifier  : 'enquiry',
+    //                 rules: [
+    //                   {
+    //                     type   : 'empty',
+    //                     prompt : 'Please enter the purpose of your enquiry'
+    //                   }
+    //                 ]
+    //               },
 
-                  model: {
-                    identifier  : 'model',
-                    rules: [
-                      {
-                        type   : 'empty',
-                        prompt : 'Please enter the model number of your computer/laptop'
-                      }
-                    ]
-                  },
+    //               model: {
+    //                 identifier  : 'model',
+    //                 rules: [
+    //                   {
+    //                     type   : 'empty',
+    //                     prompt : 'Please enter the model number of your computer/laptop'
+    //                   }
+    //                 ]
+    //               },
 
-                  first-name: {
-                    identifier  : 'first-name',
-                    rules: [
-                      {
-                        type   : 'empty',
-                        prompt : 'Please enter your first name'
-                      }
-                    ]
-                  },
+    //               first-name: {
+    //                 identifier  : 'first-name',
+    //                 rules: [
+    //                   {
+    //                     type   : 'empty',
+    //                     prompt : 'Please enter your first name'
+    //                   }
+    //                 ]
+    //               },
 
-                  last-name: {
-                    identifier  : 'last-name',
-                    rules: [
-                      {
-                        type   : 'empty',
-                        prompt : 'Please enter your first name'
-                      }
-                    ]
-                  },
+    //               last-name: {
+    //                 identifier  : 'last-name',
+    //                 rules: [
+    //                   {
+    //                     type   : 'empty',
+    //                     prompt : 'Please enter your first name'
+    //                   }
+    //                 ]
+    //               },
 
-                  email: {
-                    identifier  : 'email',
-                    rules: [
-                      {
-                        type   : 'empty',
-                        prompt : 'Please enter your e-mail'
-                      },
-                      {
-                        type   : 'email',
-                        prompt : 'Please enter a valid e-mail'
-                      }
-                    ]
-                  },
+    //               email: {
+    //                 identifier  : 'email',
+    //                 rules: [
+    //                   {
+    //                     type   : 'empty',
+    //                     prompt : 'Please enter your e-mail'
+    //                   },
+    //                   {
+    //                     type   : 'email',
+    //                     prompt : 'Please enter a valid e-mail'
+    //                   }
+    //                 ]
+    //               },
 
 
-                  phone: {
-                    identifier  : 'phone',
-                    rules: [
-                      {
-                        type   : 'empty',
-                        prompt : 'Please enter your e-mail'
-                      },
-                      {
-                        type   : 'phone',
-                        prompt : 'Please enter a valid phone number'
-                      }
-                    ]
-                  }
-                }
-              });
+    //               phone: {
+    //                 identifier  : 'phone',
+    //                 rules: [
+    //                   {
+    //                     type   : 'empty',
+    //                     prompt : 'Please enter your e-mail'
+    //                   },
+    //                   {
+    //                     type   : 'phone',
+    //                     prompt : 'Please enter a valid phone number'
+    //                   }
+    //                 ]
+    //               },
+
+    //               consent:{
+    //                 identifier:'consent',
+    //                 rules:[
+    //                   {
+    //                     type:'checked',
+    //                     prompt:'you must agree to the terms'
+    //                   }
+    //                 ]
+    //               }
+    //             }
+    //           });
       
-      $("#enquiry").selectmenu();
+    //   $("#enquiry").selectmenu();
 
-    })
+    // })
 
     // $("#submit").on("submit", function(e){
     //   e.preventDefault();
@@ -204,9 +220,12 @@ $(document).ready(function() {
 
       // $('#form .dropdown.icon').click(function(){
       //   $(".menu").show()
-      // });
+      });
       
 </script>
+<!-- <script src="js/myJs/submitionFormLogic.js"></script> -->
+<script src="js/assets/components/form.js"></script>
+<!-- C:\xampp\htdocs\Meteor\js\assets\components -->
 <?php
     include_once ("footer.php");
 ?>
