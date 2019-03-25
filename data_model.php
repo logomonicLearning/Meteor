@@ -27,6 +27,22 @@ function get_all_products(){
 }
 
 
+function get_product($pid){
+	global $conn;
+	$sql = "SELECT * FROM products where product_id=".$pid;
+	$result = mysqli_query($conn, $sql);
+	
+		if (mysqli_num_rows($result) > 0) {
+			// output data of each row
+			
+			$row = mysqli_fetch_assoc($result);
+
+			return $row;
+		} else{
+			return false;
+		}
+}
+
 
 # If record for the product found in the database then 
 # it will increase Quantity of that product by 1 else it will insert the a new row

@@ -7,9 +7,11 @@ include_once "data_model.php";
 	    border-style: none;
 	    height: 170px;
 	}
+
 	.grid h3 {
 	    font-size: 1.05rem;
 	}
+
 </style>
 <link rel="stylesheet" type="text/css" href="css/myStyle/productsStyle.css">
 	
@@ -18,16 +20,18 @@ include_once "data_model.php";
     <div class="wrapper">
       <div class="grid">	
 		<?php 
-			$product_arr = get_all_products();
-		   	if(!empty($product_arr)){
-			   	foreach($product_arr as $product){?>
-
+			$product = get_product($_GET['pid']);
+		   	?>	   
 		<div class="card cart_product">
-			<a href="product.php?pid=<?php echo $product['product_id']?>" class="image cart_product_image">
+			<a href="" class="image cart_product_image">
+				<!-- <img width="200px" src="images/T90B_14.1_inch.jpg" alt=""> -->
 				<img width="200px" src="<?=$product['product_image']?>"/>
-			<div href="" class="content">
-				<h3><?=$product['product_name']?></h3>
-			</div>
+			</a>
+			<a href="" class="content">
+				<h3><a href="product.php?pid=<?php echo $product['product_id']?>"><?=$product['product_name']?> </a></h3>
+				<p class="description">
+					<?=$product['product_specifications']?>
+				</p>
 			</a>
 			<div class="buy-it">
 				<span class="price"><?=$product['product_price']?></span>
@@ -35,14 +39,7 @@ include_once "data_model.php";
 			</div>
 		</div>
 	
-		<?php }
-			} 
-			else {
-				echo "<div class='error'>No products available, please come back later!<a href='product.php'> Shop Now! </a></div>";
-			} # End of if else 	
-		?>
-
-			</div>
+		</div>
 		</div>
 	</div>
 </main>
@@ -52,6 +49,7 @@ include_once "data_model.php";
 
 <?php
 # Update button submit section.
+
 if(isset($_POST['update'])){
 	$product_id = $_POST['cart_product_id'];
 	$quantity = $_POST['quantity'];
@@ -60,12 +58,15 @@ if(isset($_POST['update'])){
 		header("Location:cart.php");
 	}
 }
+
 # Delete button submit section.
+
 if(isset($_POST['delete'])){
 	$product_id = $_POST['delete_product_id'];
 	if(delete_item_from_cart($product_id)){
 		header("Location:cart.php");
 	}
 }
+
 include_once('footer.php');
  ?>
