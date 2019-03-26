@@ -96,7 +96,7 @@
 <button id="test">testig</button>
   </main>
 
-<script src="js/myjs/contactlogic.js">
+<script src="js/myjs/contactlogic0.1.js">
 
 
 

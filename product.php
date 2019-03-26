@@ -3,9 +3,34 @@ include_once "header.php";
 include_once "data_model.php";	
 ?>
 <style type="text/css">
+	a.image.cart_product_image {
+    	display: flex;
+    	justify-content: center;
+	}
+
+	.buy-it{
+		display:flex;
+		justify-content:space-around;
+	}
+	.button-primary {
+    	background: #f0c14b;
+    	border-color: #a88734 #9c7e31 #846a29;
+    	color: #111;
+	}
+
+	.product-container{
+		width:60%;
+	}
+	.product-wrapper{
+		/*width:60;*/
+		height:792px;
+		max-height: 792px;
+		/*min-height: 500px*/
+	}	
 	.grid img {
+	    
 	    border-style: none;
-	    height: 170px;
+	    height: 100%;
 	}
 
 	.grid h3 {
@@ -13,15 +38,16 @@ include_once "data_model.php";
 	}
 
 </style>
-<link rel="stylesheet" type="text/css" href="css/myStyle/productsStyle.css">
+<!-- <link rel="stylesheet" type="text/css" href="css/myStyle/productsStyle.css"> -->
 	
 <main class="products">
-  <div class="container">
-    <div class="wrapper">
-      <div class="grid">	
+  <div class="container product-container">
+    <div class="product-wrapper">
+      
 		<?php 
 			$product = get_product($_GET['pid']);
-		   	?>	   
+		?>	   
+		
 		<div class="card cart_product">
 			<a href="" class="image cart_product_image">
 				<!-- <img width="200px" src="images/T90B_14.1_inch.jpg" alt=""> -->
@@ -37,9 +63,7 @@ include_once "data_model.php";
 				<span class="price"><?=$product['product_price']?></span>
 				<button class="pure-button button-primary" ><i class="ui icon cart"></i>Add to cart</button>	
 			</div>
-		</div>
-	
-		</div>
+		</div>	
 		</div>
 	</div>
 </main>
