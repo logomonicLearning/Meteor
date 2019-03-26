@@ -127,7 +127,7 @@
                   <li class="pure-menu-item"><a href="#" class="pure-menu-link">Hardware Upgrade</a></li>
                 </ul>
             </li>
-            <li class="pure-menu-item"><a class="pure-menu-link" href="products0.1.php">Products</a></li>
+            <li class="pure-menu-item"><a class="pure-menu-link" href="products.php">Products</a></li>
             <li class="pure-menu-item"><a class="pure-menu-link">About</a></li>
             <li class="pure-menu-item"><a class="pure-menu-link" href="contact.php">Contact</a></li>
             <li class="pure-menu-item"><a class="pure-menu-link" href="faq.php">FAQ</a></li>

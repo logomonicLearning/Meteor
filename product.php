@@ -6,6 +6,18 @@ include_once "data_model.php";
 	a.image.cart_product_image {
     	display: flex;
     	justify-content: center;
+    	text-align:center;
+
+	}
+
+	.cart_product_image {
+	    text-align: center;
+	}
+	/*a.image.cart_product_image*/
+
+	.cart_product_image img {
+    	width: 45%;
+    	height:45%;
 	}
 
 	.buy-it{
@@ -64,6 +76,7 @@ include_once "data_model.php";
 				<button class="pure-button button-primary" ><i class="ui icon cart"></i>Add to cart</button>	
 			</div>
 		</div>	
+
 		</div>
 	</div>
 </main>

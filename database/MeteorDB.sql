@@ -35,3 +35,17 @@ CREATE TABLE IF NOT EXISTS cart(
     FOREIGN KEY(product_id) REFERENCES products(product_id) 
 
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS contact(
+	contact_id INT(10) NOT NULL AUTO_INCREMENT,
+	enquiry VARCHAR(100) NOT NULL,
+	model VARCHAR(100) NOT NULL,
+	description TEXT NOT NULL,
+	firstName VARCHAR(100) NOT NULL,
+	lastName VARCHAR(100) NOT NULL,
+	email VARCHAR(100) NOT NULL,
+	phone INT(11) NOT NULL,
+	PRIMARY KEY(contact_id);
+	consent;
+)
+

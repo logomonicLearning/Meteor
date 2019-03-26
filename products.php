@@ -10,6 +10,9 @@ include_once "data_model.php";
 	.grid h3 {
 	    font-size: 1.05rem;
 	}
+	a.image.cart_product_image {
+    	text-align: center;
+	}
 </style>
 <link rel="stylesheet" type="text/css" href="css/myStyle/productsStyle.css">
 	
