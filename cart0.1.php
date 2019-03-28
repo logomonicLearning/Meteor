@@ -2,14 +2,12 @@
 
 include_once "header.php";
 include_once "data_model.php";
-
-
 		
 ?>
 
 
 
-	<link rel="stylesheet" type="text/css" href="css/myStyle/productsStyle.css">
+<link rel="stylesheet" type="text/css" href="css/myStyle/productsStyle.css">
 	
 <main class="products">
   <div class="container">

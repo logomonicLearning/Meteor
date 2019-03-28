@@ -14,10 +14,10 @@ include_once "data_model.php";
 	    text-align: center;
 	}
 	/*a.image.cart_product_image*/
-
+	
 	.cart_product_image img {
-    	width: 45%;
-    	height:45%;
+	    width: auto;
+	    height: 45vh;
 	}
 
 	.buy-it{

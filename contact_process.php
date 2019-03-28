@@ -1,5 +1,5 @@
 <?php 
-include_once ('dbCon.php');
+    include_once ('dbCon.php');
 ?>
 
 <?php
@@ -9,7 +9,6 @@ $enquiry=$model=$description=$firstName=$lastName=$email=$phone=$consent="";
 $error_enquiry=$error_model=$error_description=$error_firstname=$error_lastname=$error_email=$error_phone=$error_consent="";
 $has_error = false;
 // first-name, last-name, make,phone, email,description    
-// 
 
 if(isset($_POST['submit'])) {
     //1 enquiry
@@ -85,7 +84,7 @@ if(isset($_POST['submit'])) {
     //     echo "Need wheelchair access.";
     // }
 
-    if($_POST['consent'] !='yes') {
+    if($_POST['consent'] !='Yes') {
         $error_consent = "tick to consent!!";
         $has_error=true;
     }
@@ -105,23 +104,22 @@ if(isset($_POST['submit'])) {
         } 
         header("Location:contact.php?msg=$msg");
     }
-    //needs fixing
-    // else {
-    //     echo"<script>
-    //         var errorTags=$('.ui.error.message').length;
-    //         for(let i=0;i<errorTags;i++){
-    //             if(errorTags[i].length>0){
-    //                 errorTags[i].css('display','block');
-    //             }
-    //         }
-    //     </script>"
-    // };
+    else {
+        // still doesnt i tried it in jsbin which works but this doesnt!
+        echo"<script>
+            var errorTags=$('.ui.error.message');
+            for(let i=0;i<errorTags.length;i++){
+                if(errorTags[i].value.length>0){
+                    errorTags[i].style.display='block';
+                }
+            }
+        </script>";
+    };
     
 } # End of POST
 
 
-# Sanitising user input
-
+# SANITISE USER INPUT
 function filter_user_input($data, $type="") {
     $data = trim($data);
     $data = strip_tags($data);
@@ -139,6 +137,8 @@ function filter_user_input($data, $type="") {
 } # End of filter_user_input function
 
 
+
+// ADD TO DATABASE
 function insert_into_db($enquiry, $model, $description, $firstName, $lastName, $email, $phone){
     global $conn;
 
@@ -154,7 +154,7 @@ function insert_into_db($enquiry, $model, $description, $firstName, $lastName, $
     }
 } # End of insert_into_db function 
 
-
+//SEND TO MAIL
 function send_email($enquiry, $model, $description, $firstName, $lastName, $email, $phone){
     $to = "logomoniclearning@gmail.com";
     $subject = "User Contact info";
