@@ -132,6 +132,29 @@
             <li class="pure-menu-item"><a class="pure-menu-link" href="contact.php">Contact</a></li>
             <li class="pure-menu-item"><a class="pure-menu-link" href="faq.php">FAQ</a></li>
         </ul>
+        
+        <a href="cart0.1.php" aria-label="0 items in shopping basket" class="" id="nav-cart" >
+            <div class="cart"> 
+                <span id="nav-cart-count" aria-hidden="true" class="nav-cart-count nav-cart-0">
+                  
+<?php 
+                    include ('dbCon.php');
+                    $sql = "SELECT SUM(quantity) AS total_item FROM cart";
+                    $result = mysqli_query($conn, $sql);
+                    $row = mysqli_fetch_assoc($result);
+              
+                    if($row['total_item']!= NULL){
+                      echo "<b>".$row['total_item']."</b>" ;
+                    } else {
+                      echo "0";
+                    }
+                  ?>
+
+                  
+                </span>
+            </div>
+            <!-- <span class="nav-cart-icon nav-sprite"></span> -->
+        </a>
     </div>    
 </nav> <!-- end of nav -->
 </div>
