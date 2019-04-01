@@ -1,13 +1,34 @@
 <?php
+# Update button submit section.
+include_once "data_model.php";
+if(isset($_POST['update'])){
+
+	$product_id = $_POST['cart_product_id'];
+	$quantity = $_POST['quantity'];
+
+	if(update_cart($product_id,$quantity)){
+		header("Location:cart0.1.php");
+	}
+
+}
+
+# Delete button submit section.
+
+if(isset($_POST['delete'])){
+
+	$product_id = $_POST['delete_product_id'];
+
+	if(delete_item_from_cart($product_id)){
+		header("Location:cart0.1.php");
+	}
+
+}
 
 include_once "header.php";
-include_once "data_model.php";
+
 		
 ?>
 
-
-
-<!-- <link rel="stylesheet" type="text/css" href="css/myStyle/productsStyle.css"> -->
 <style >
 	main{
 		width:80vw;
@@ -22,23 +43,12 @@ include_once "data_model.php";
 		width:10vw;
 	}
 	
-/*	.card.cart_product {
-		width:50vw;
-	}
-*/
 
 	table img{
 		height:170px;
 	}
 
-
-
 	table tr{
-/*		display:flex;
-		justify-content: 	center;
-		align-items: 	center;
-
-*/	
 		text-align:center; 			
 	}
 
@@ -62,8 +72,6 @@ include_once "data_model.php";
 	.table input[type="number"]{
 		width:40px;
 	}
-	
-
 
 </style>
 <div class="main-wrapper">	
@@ -114,7 +122,7 @@ include_once "data_model.php";
 	<?php  }
 		# End of foreach loop
 			} else {
-					echo "<div class='error'>You do not have any item in the basket!<a href='product.php'> Shop Now! </a></div>";
+					echo "<div class='ui error'>You do not have any item in the basket!<a href='products.php'> Shop Now! </a></div>";
 			} # End of if else 
 	
 	?>
@@ -142,32 +150,5 @@ include_once "data_model.php";
 
 
 <?php
-# Update button submit section.
-
-if(isset($_POST['update'])){
-
-		$product_id = $_POST['cart_product_id'];
-		$quantity = $_POST['quantity'];
-
-		if(update_cart($product_id,$quantity)){
-			header("Location:cart.php");
-		}
-
-}
-
-# Delete button submit section.
-
-if(isset($_POST['delete'])){
-	
-		$product_id = $_POST['delete_product_id'];
-
-		if(delete_item_from_cart($product_id)){
-			header("Location:cart.php");
-		}
-
-}
-
-
-  
 include_once('footer.php');
  ?>

@@ -15,7 +15,7 @@ if(isset($_POST['submit'])) {
    
     if(empty($_POST['enquiry'])) {
         $error_enquiry = "enter the nature of your enquiry!!";
-        // echo "<script>document.getElementById('err-model').style.display='block'; </script>";
+        echo "<script>document.getElementById('err-model').style.display='block'; </script>";
         $has_error = true;
     } 
     else {

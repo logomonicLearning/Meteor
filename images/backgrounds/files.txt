@@ -1,0 +1,30 @@
+ Volume in drive C has no label.
+ Volume Serial Number is FE02-E71E
+
+ Directory of C:\xampp\htdocs\Blake\PART2\portfolio\images\backgrounds
+
+01/04/2019  12:34    <DIR>          .
+01/04/2019  12:34    <DIR>          ..
+01/04/2019  10:24            85,928 00-build.webp
+01/04/2019  10:36           220,244 175-1757988_man-computer-repair-tools-png.png
+01/04/2019  10:25           117,911 1_X9z_J-dF6ENyw-mnCdEh9w.png
+01/04/2019  10:25           346,585 broken laptop.png
+01/04/2019  10:28           208,971 computer-virus.png
+01/04/2019  10:29           158,961 computer-virus_1024px.jpg
+01/04/2019  10:40            34,370 computerBrands.png
+01/04/2019  10:27           293,092 data-recovery-image.jpg
+01/04/2019  10:27            36,795 dataRecovery1.jpg
+01/04/2019  10:27            54,068 easeus-data-recovery-software-.jpg
+01/04/2019  12:34                 0 files.txt
+01/04/2019  10:27            29,101 GettyImages-860969670-5ae1f89e3128340037c6a2dd.jpg
+01/04/2019  10:26            96,719 hard-drive.jpg
+01/04/2019  10:37            50,400 homepage.jpg
+01/04/2019  10:37           808,784 ipswich-computer-repair.jpg
+01/04/2019  12:31            82,918 laptop-brokenscreen.jpg
+01/04/2019  10:37           102,126 motherboardRepair.jpg
+01/04/2019  12:20           188,032 pcDoctorCar.png
+01/04/2019  10:26            84,576 u_21534979.jpg
+01/04/2019  10:34           209,312 virus1.jpg
+01/04/2019  12:17           422,269 virusDetectedCar.png
+              21 File(s)      3,631,162 bytes
+               2 Dir(s)  290,104,406,016 bytes free

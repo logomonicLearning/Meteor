@@ -1,8 +1,9 @@
  
 <?php 
-    include_once ("header.php")
-		
+    include_once ("header.php");
+    include_once ("carousel.php");
 ?>
+
 <style type="text/css">
   #repair-process h2{
     text-align:center;
@@ -11,32 +12,8 @@
     text-align: center;
   }
 
-
-  .ui.card:first-child {
-    max-width: 100%;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 290px;
-    min-height: 0px;
-    background: #FFFFFF;
-    padding: 0em;
-    border: none;
-    border-radius: 0.28571429rem;
-    -webkit-box-shadow: 0px 1px 3px 0px #D4D4D5, 0px 0px 0px 1px #D4D4D5;
-    box-shadow: 0px 1px 3px 0px #D4D4D5, 0px 0px 0px 1px #D4D4D5;
-    -webkit-transition: -webkit-box-shadow 0.1s ease, -webkit-transform 0.1s ease;
-    transition: -webkit-box-shadow 0.1s ease, -webkit-transform 0.1s ease;
-    transition: box-shadow 0.1s ease, transform 0.1s ease;
-    transition: box-shadow 0.1s ease, transform 0.1s ease, -webkit-box-shadow 0.1s ease, -webkit-transform 0.1s ease;
-    z-index: '';
-}
 </style>
+
 <main>
   <div class="container">
     <section class="wrapper" >
@@ -69,7 +46,7 @@
     <section class="wrapper" id="advert">
       
       <div class="ui card">
-          <div class="conten  t">
+          <div class="content">
             <div class="header">
               <img src="images/icons/icons8-laptop-80.png">
               Laptop Repair
@@ -83,9 +60,9 @@
             <a style="color:grey" href="contact.php" class="pure-button button-bottom">
               Contact Us
             </a>
-            <div class="pure-button button-bottom">
+            <a href="computerRepair.php" class="pure-button button-bottom">
               More Info
-            </div>
+            </a>
           </div>
         </div>
 
@@ -104,9 +81,9 @@
               <a href="contact.php" class="pure-button button-bottom">
                 Contact Us
               </a>
-              <div class="pure-button button-bottom">
+              <a href="computerRepair.php"class="pure-button button-bottom">
                 More Info
-              </div>
+              </a>
             </div>
           </div>
 
@@ -146,9 +123,9 @@
                   <a href="contact.php" class="pure-button button-bottom">
                     Contact Us
                   </a>
-                  <div class="pure-button button-bottom"  >
+                  <a href="virusRemoval.php"class="pure-button button-bottom">
                     More Info
-                  </div>
+                  </a>
                 </div>
               </div>
     </section>
@@ -224,6 +201,7 @@
      </section>
 
   </div>
+  
 </main>
 
 <?php

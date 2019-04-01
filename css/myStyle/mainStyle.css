@@ -25,6 +25,10 @@ main, footer, header{
   align-content:center;
 }
 
+main{
+  min-height:500px;
+}
+
 body{
 	font-family:var(--font3);
 }
