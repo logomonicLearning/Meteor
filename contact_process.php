@@ -8,14 +8,11 @@
 $enquiry=$model=$description=$firstName=$lastName=$email=$phone=$consent="";
 $error_enquiry=$error_model=$error_description=$error_firstname=$error_lastname=$error_email=$error_phone=$error_consent="";
 $has_error = false;
-// first-name, last-name, make,phone, email,description    
 
 if(isset($_POST['submit'])) {
-    //1 enquiry
-   
+    //1 enquirY
     if(empty($_POST['enquiry'])) {
         $error_enquiry = "enter the nature of your enquiry!!";
-        echo "<script>document.getElementById('err-model').style.display='block'; </script>";
         $has_error = true;
     } 
     else {
@@ -77,22 +74,23 @@ if(isset($_POST['submit'])) {
         $has_error = true;
     } 
     else{
-        $phone = filter_user_input($_POST['subject']);
+        $phone = filter_user_input($_POST['phone']);
     }
-    
-    // if(isset($_POST['consent']) && $_POST['consent'] == 'Yes') {
-    //     echo "Need wheelchair access.";
-    // }
-
-    if($_POST['consent'] !='Yes') {
+    //8 consent
+    if($_POST['consent'] !='yes') {
         $error_consent = "tick to consent!!";
         $has_error=true;
     }
 
+    else{
+      $consent="Yes";
+    }
+
     //error handler
     if(!$has_error){
-        if(insert_into_db($name, $email, $subject, $message)){
-            if(send_email($name, $email, $subject, $message)){
+        if(insert_into_db($enquiry,  $model, $description, $firstName, $lastName,  $email, $phone)){
+          
+            if(send_email($enquiry,  $model, $description, $firstName, $lastName,  $email, $phone)){
                 $msg = "success"; 
             } 
             else{
@@ -102,19 +100,10 @@ if(isset($_POST['submit'])) {
         else {
             $msg= "error_db";
         } 
-        header("Location:contact.php?msg=$msg");
+        //turned off because the header has already been set  
+        // header("Location:contact.php?msg=$msg");
     }
-    else {
-        // still doesnt i tried it in jsbin which works but this doesnt!
-        echo"<script>
-            var errorTags=$('.ui.error.message');
-            for(let i=0;i<errorTags.length;i++){
-                if(errorTags[i].value.length>0){
-                    errorTags[i].style.display='block';
-                }
-            }
-        </script>";
-    };
+    
     
 } # End of POST
 
@@ -159,10 +148,10 @@ function send_email($enquiry, $model, $description, $firstName, $lastName, $emai
     $to = "logomoniclearning@gmail.com";
     $subject = "User Contact info";
     $message = " You have received an email from : <br><b>"
-    ." Name: "  .$name. "<br>"
+    ." Name: "  .$firstName .$lastName. "<br>"
     ." Email: ".$email. "<br>"
-    ." Subject: " .$description. "<br>"
-    ." Message: ".$message. "</b><br>";
+    ." Regarding: " .$enquiry. "<br>"
+    ." Description: ".$description. "</b><br>";
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
     $headers .= "From: logomoniclearning@gmail.com" . "\r\n" ;
@@ -175,4 +164,6 @@ function send_email($enquiry, $model, $description, $firstName, $lastName, $emai
     }
 }
 ?>
+
+
 

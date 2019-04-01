@@ -49,22 +49,22 @@
       }, 3000);
   });
 
-  // $(document).ready(function() {
-  //     $('.pure-menu-list .pure-menu-has-children').dropdown({
-  //       on: 'hover'
-  //     });
+  $(document).ready(function() {
+      // $('.pure-menu-list .pure-menu-has-children').dropdown({
+      //   on: 'hover'
+      // });
 
-  //     $('.ui.menu a.item')
-  //       .on('click', function() {
-  //         $(this)
-  //           .addClass('active')
-  //           .siblings()
-  //           .removeClass('active')
-  //         ;
-  //       })
-  //     ;
-  //   })
-  // ;
+      $('.ui.menu a.item')
+        .on('click', function() {
+          $(this)
+            .addClass('active')
+            .siblings()
+            .removeClass('active')
+          ;
+        })
+      ;
+    })
+  ;
 
   </script>
 
