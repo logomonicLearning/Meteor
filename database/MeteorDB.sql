@@ -49,3 +49,9 @@ CREATE TABLE IF NOT EXISTS contact(
 	consent;
 )
 
+CREATE TABLE IF NOT EXISTS `about` (
+  `id` int(10) NOT NULL,
+  `title` varchar(100) NOT NULL,
+  `message` text NOT NULL
+  PRIMARY KEY(id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

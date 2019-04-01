@@ -27,7 +27,16 @@ include_once("dbCon.php");
 //print_r($records);
 
 ?>
+<style>
+  .container{
+    position:relative;
+    top:50px;
+    margin:auto;
+    margin-bottom:100px;
+  }
 
+
+</style>
 <div class="about container" style="text-align:justify; width:50%;">
 
 <?php

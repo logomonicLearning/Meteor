@@ -46,6 +46,8 @@ header:nth-child(2){
   margin-bottom: 110px  
 }
 
+
+
 .header-wrapper{
   width:100%;
   background:var(--footer-bg3);
@@ -122,6 +124,32 @@ header:nth-child(2){
 .pure-menu-item:hover::after, .pure-menu-item:hover::before{
   transform:scale(1);
 }
+
+#nav-cart{
+  position:absolute;
+  right:0;
+}
+
+#nav-cart-count {
+    position: absolute;
+    bottom: 21px;
+    right: 18px;
+}
+
+.pure-menu-horizontal .cart {
+    background-image: url('../../images/Icons/cart.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    float: right;
+    width: 35px;
+    height: 35px;
+    margin: 0 5px;
+    padding-top: 0px;
+    border: 1px solid white;
+    display:flex;
+    justify-content:  center;
+}
+
 
 /*Slider*/
 #slider{

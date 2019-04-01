@@ -2,19 +2,77 @@
 
 include_once "header.php";
 include_once "data_model.php";
-
-
 		
 ?>
 
 
 
-	<link rel="stylesheet" type="text/css" href="css/myStyle/productsStyle.css">
+<!-- <link rel="stylesheet" type="text/css" href="css/myStyle/productsStyle.css"> -->
+<style >
+	main{
+		width:80vw;
+	}
+
+	.main-wrapper{
+		display:flex;
+		justify-content: space-between;	
+	}
+
+	aside{
+		width:10vw;
+	}
 	
+/*	.card.cart_product {
+		width:50vw;
+	}
+*/
+
+	table img{
+		height:170px;
+	}
+
+
+
+	table tr{
+/*		display:flex;
+		justify-content: 	center;
+		align-items: 	center;
+
+*/	
+		text-align:center; 			
+	}
+
+	table tr td:nth-child(1){
+		width:20vw;
+	}
+
+	table tr td:nth-child(2){
+			width:40vw;
+	}
+
+	table tr td:nth-child(3){
+		width:10vw;
+	}
+
+	table tr td:nth-child(4){
+		width:10vw;
+		align-items:center;
+		vertical-align:align="center" center;
+	}
+	.table input[type="number"]{
+		width:40px;
+	}
+	
+
+
+</style>
+<div class="main-wrapper">	
 <main class="products">
-  <div class="container">
-    <div class="wrapper">
-      <div class="grid">	
+  <div class="cart-container">
+    <table class="ui table celled">
+    	<thead></thead>
+    	<tbody>
+      <!-- <div class="grid">	 -->
 	<?php 
 		$cart_arr =get_cart_details();
 		$grand_total = null;
@@ -25,79 +83,61 @@ include_once "data_model.php";
 				$grand_total += $cart_product['Total'];
 	?>
 
-	<div class="card cart_product">
-		<figure class="image cart_product_image">
-			<!-- <img width="200px" src="images/T90B_14.1_inch.jpg" alt=""> -->
-			<img width="200px" src="images/<?=$cart_product['product_image']?>"/>
-		</figure>
-		<div class="content">
+	<tr class="card cart_product">
+		<td class="image cart_product_image">
+			<a href="product.php?pid=<?php echo $product['product_id']?>" class="image cart_product_image"><img width="200px" src="<?=$cart_product['product_image']?>"/></a>
+		</td>
+		<td class="content">
 			<h3><?=$cart_product['product_name']?></h3>
-			<div class="description">
-				<?=$cart_product['product_specifications']?>
-			</div>
-		</div>
-		<div class="buy-it">
-			<span class="price"><?=$cart_product['product_price']?></span><button class="pure-button button-primary" ><i class="ui icon cart"></i>Add to cart</button>	
-		</div>
-	</div>
-
-   <!--  <div class="cart_product">
-
-					<div class="cart_product_image">
-						<img src="images/<?=$cart_product['product_image']?>"/>
-					</div>  -->
-					<!-- End of cart_product_image div -->
-
-				<!-- <div class="cart_product_details">
-
-					<p><br>Product : <?=$cart_product['product_name']?></p>
-					<p>Price Per Item : &pound; <?=$cart_product['product_price']?></p>
-					<form method='post'>
-					<p>Quantity : <input type="number" style="height:25px;" name="quantity" min="1" max="10" value="<?=$cart_product['quantity']?>">
-								<input type="hidden" name="cart_product_id" value="<?=$cart_product['product_id']?>">
-								&nbsp; &nbsp;<input type="submit"  class="btn_update" name="update" value="Update Quantity"></p>
-					</form><br><hr><br>
-					
-					<b>Subtotal : &pound; <?= $cart_product['Total']?></b><br><br>
-					
-					<form method="post">
+			<form method="post">
 					<input type="hidden" name="delete_product_id" value="<?=$cart_product['product_id']?>">
 					<input type="submit"  class="btn_delete" name="delete" value="Delete Item">
-					</form><br>
-				
-				</div>  -->
-				<!-- End of cart_product_details div -->
+			</form><br>
+		</td>
+		<td class="price">
+			<span class="price">&pound;<?=$cart_product['product_price']?></span>
+		</td>
+		<!-- <td valign="center" > -->
+		<td >
+			<!-- <div><input type="number" name="quantity"><input type="button" name="update" value="Update"></div> -->
+			<form method='post'>
+					<p>Quantity : <input type="number" style="height:25px;" name="quantity" min="1" max="10" value="<?=$cart_product['quantity']?>">
+								<input type="hidden" name="cart_product_id" value="<?=$cart_product['product_id']?>">
+								&nbsp; &nbsp;<input type="submit"  class="btn_update" name="update" value="Update Quantity"><p>
+			</form>
+					
+		</td>
+	</tr>
 
-  <!-- </div> -->
-  <!-- End of cart_product div -->
+					<!-- tbl end -->
 
-<?php
-	  }	# End of foreach loop
-	} else {
-		echo "<div class='error'>You do not have any item in the basket!<a href='product.php'> Shop Now! </a></div>";
-	} # End of if else 
+	<?php  }
+		# End of foreach loop
+			} else {
+					echo "<div class='error'>You do not have any item in the basket!<a href='product.php'> Shop Now! </a></div>";
+			} # End of if else 
 	
+	?>
+		</div>
+	</tbody>
+	</table>
+</main>
 
+<aside>	
+<?php
 	# Grand Total Section 
-
 	if(!empty($grand_total)){?>
-
-			
-
 		<div class="grand_total">
-			<b> Grand Total: &pound <?=$grand_total?><br><br>
+			<b> Grand Total: &pound; <?=$grand_total?><br><br>
 			<a href="checkout.php">
 				<button  class="btn_checkout">Go to Checkout </button>
 			</a>	
 		</div> <!-- End of grand_total div -->
+	<?php } ?>
 
-<?php } ?>
 
-			</div>
-		</div>
-	</div>
-</main>
-
+</aside>
+</div>
 
 
 
