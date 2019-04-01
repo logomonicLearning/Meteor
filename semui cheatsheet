@@ -1,0 +1,46 @@
+Semantic uses an inheritance system similar to Sublime Text designed to facilitate an ecosystem of theming.
+
+Semantic definitions are compiled with LESS using only simple, well adopted CSS pre-processing features like css variables, color adjustment functions, and unit conversions, but not language-specific features like nested rule declarations, guards, or mix-ins.
+
+Elements of a Theme
+
+Themes are composed of two separate files: a .variable file, which has values that modify variables for a component, and an .overrides file, which includes LESS rules which will be included after the default css of a definition.
+
+In the following examples, paths all refer to default project paths, these might be adjusted in your project's semantic.json file. 
+
+
+Global Inheritance
+
+Each component in Semantic, inherits from site.variables. This file contains many important site-wide defaults like base EM values, brand colors and named colors, sizing defaults, font settings and more. Keeping site wide defaults central allow you to quickly adjust constraints for all components for your site, by adjusting values like global @borderRadius @fontSize or @emSize.
+
+
+site.variables is a "global definition" file with the same three levels of inheritance as other definitions.
+
+Component Inheritance
+
+Each component in Semantic, begins its inheritance with default values from site.variables, and then defines its own variables as part of a default theme. The default theme then can be modified by a packaged theme, or by a site theme.
+
+For example, ui button loads variables from six separate files in order:
+Site variables
+Defaults pulled from src/themes/default/site.variables
+Packaged theme overrides pulled for site from src/themes/{themename}/site.variables
+Site overrides pulled from src/site/site.variables
+Button variables
+Button default variables from src/themes/default/elements/button.variables
+Button packaged-theme variables from src/themes/{themename}/elements/button.variables
+Button's site theme from src/site/elements/button.variables
+
+CSS Overrides
+
+If additional CSS, not included in the definition, is necessary for a theme, or to adjust an element for your site, it is recommended to use an .override file.
+
+Overrides are parsed and written after the definition's css and allows developers to include arbitrary css inside the definition. Overrides are parsed as LESS files and all component variables are available inside an override file
+
+\src\definitions\elements
+\src\_site\globals
+\Semantic-UI-master\src\themes
+
+CSS Write Order
+CSS compiled from src/definitions/elements/button.less
+CSS compiled from src/themes/{themeName}/elements/button.overrides
+CSS compiled from src/site/elements/button.overrides

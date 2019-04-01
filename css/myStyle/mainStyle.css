@@ -46,6 +46,8 @@ header:nth-child(2){
   margin-bottom: 110px  
 }
 
+
+
 .header-wrapper{
   width:100%;
   background:var(--footer-bg3);
@@ -126,6 +128,12 @@ header:nth-child(2){
 #nav-cart{
   position:absolute;
   right:0;
+}
+
+#nav-cart-count {
+    position: absolute;
+    bottom: 21px;
+    right: 18px;
 }
 
 .pure-menu-horizontal .cart {

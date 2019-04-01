@@ -19,23 +19,23 @@
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   
   <!--- Site CSS -->
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
     <link rel="stylesheet" type="text/css" href="css/site.css">
-    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/grid.css"> -->
 
     <!--- Component CSS -->
     <link rel="stylesheet" type="text/css" href="css/icon.css">
-    <link rel="stylesheet" type="text/css" href="css/button.css">
-    <link rel="stylesheet" type="text/css" href="css/card.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/button.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/card.css"> -->
     <link rel="stylesheet" type="text/css" href="css/label.css">
-    <link rel="stylesheet" type="text/css" href="css/image.css">
-    <link rel="stylesheet" type="text/css" href="css/reveal.css">
-    <link rel="stylesheet" type="text/css" href="css/dimmer.css">
-    <link rel="stylesheet" type="text/css" href="css/rating.css">
-    <link rel="stylesheet" type="text/css" href="css/transition.css">
-    <link rel="stylesheet" type="text/css" href="css/popup.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/image.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/reveal.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/dimmer.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/rating.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/transition.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/popup.css"> -->
     <link rel="stylesheet" type="text/css" href="css/myStyle/faqStyle.css">
-    <link rel="stylesheet" href="css/form.css">  
+    <!-- <link rel="stylesheet" href="css/form.css">   -->
     <link rel="stylesheet" type="text/css" href="css/message.css">
     <link rel="stylesheet" type="text/css" href="css/myStyle/contactStyle.css">
     <!-- ../../dist/components/ -->  
@@ -56,12 +56,12 @@
     <script src="js/assets/library/iframe-content.js"></script>
 
     <!-- components -->
-    <script type="text/javascript" src="js/assets/components/rating.js"></script>
-    <script type="text/javascript" src="js/assets/components/transition.js"></script>
+    <!-- <script type="text/javascript" src="js/assets/components/rating.js"></script> -->
+    <!-- <script type="text/javascript" src="js/assets/components/transition.js"></script> -->
     <!-- doesnt work so cancelled -->
     <!-- <script src="js/assets/components/form.js"></script>   -->
-    <script src="js/transition.js"></script>
-    <script src="js/dropdown.js"></script>
+    <!-- <script src="js/transition.js"></script> -->
+    <!-- <script src="js/dropdown.js"></script> -->
 
   <!--- Example Javascript -->
   <script>
@@ -122,13 +122,13 @@
                 <ul class="pure-menu-children">
                   <li class="pure-menu-item"><a href="#" class="pure-menu-link">Laptop Repair</a></li>
                   <li class="pure-menu-item"><a href="#" class="pure-menu-link">PC Repair</a></li>
-                  <li class="pure-menu-item"><a href="#" class="pure-menu-link">Data Recovery</a></li>
+                  <li class="pure-menu-item"><a href="dataRecovery.php" class="pure-menu-link">Data Recovery</a></li>
                   <li class="pure-menu-item"><a href="#" class="pure-menu-link">Virus Removal</a></li>
                   <li class="pure-menu-item"><a href="#" class="pure-menu-link">Hardware Upgrade</a></li>
                 </ul>
             </li>
             <li class="pure-menu-item"><a class="pure-menu-link" href="products.php">Products</a></li>
-            <li class="pure-menu-item"><a class="pure-menu-link">About</a></li>
+            <li class="pure-menu-item"><a class="pure-menu-link" href="about.php">About</a></li>
             <li class="pure-menu-item"><a class="pure-menu-link" href="contact.php">Contact</a></li>
             <li class="pure-menu-item"><a class="pure-menu-link" href="faq.php">FAQ</a></li>
         </ul>

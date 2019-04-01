@@ -89,14 +89,23 @@ include_once "data_model.php";
 		</td>
 		<td class="content">
 			<h3><?=$cart_product['product_name']?></h3>
-			<b>delete</b>
+			<form method="post">
+					<input type="hidden" name="delete_product_id" value="<?=$cart_product['product_id']?>">
+					<input type="submit"  class="btn_delete" name="delete" value="Delete Item">
+			</form><br>
 		</td>
 		<td class="price">
 			<span class="price">&pound;<?=$cart_product['product_price']?></span>
 		</td>
 		<!-- <td valign="center" > -->
 		<td >
-			<div><input type="number" name="quantity"><input type="button" name="update" value="Update"></div>
+			<!-- <div><input type="number" name="quantity"><input type="button" name="update" value="Update"></div> -->
+			<form method='post'>
+					<p>Quantity : <input type="number" style="height:25px;" name="quantity" min="1" max="10" value="<?=$cart_product['quantity']?>">
+								<input type="hidden" name="cart_product_id" value="<?=$cart_product['product_id']?>">
+								&nbsp; &nbsp;<input type="submit"  class="btn_update" name="update" value="Update Quantity"><p>
+			</form>
+					
 		</td>
 	</tr>
 
