@@ -97,7 +97,7 @@
   <div class="header-wrapper"> 
     <div class="container">
       <div class="wrapper" id="top-header">
-        <div id="banner"><a href="index.php"><img src="images/meteorlogo.png"></a></div>
+        <div id="banner"><a href="index.php"><img src="images/meteorlogo2.png"></a></div>
         
         <div class="contact-info">
             <span><i class="ui icon"> </i>0207 555 999</span>
