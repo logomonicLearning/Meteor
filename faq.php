@@ -4,7 +4,7 @@
 ?>
 			
 <style>
-	.container{
+	/*.container{
 			width:80%;
 			position:relative;
 			margin:auto;
@@ -16,17 +16,18 @@
 			box-shadow:3px 3px 3px 1px grey;
 			position: relative;
 			/*bottom:3px;*/
-			transition: top 2s ease;
+	/*		transition: top 2s ease;
 			-webkit-transition: top 2s ease;
 			-moz-transition: top 2s ease;
 			-o-transition: top 2s ease;
 
 		}
-		h3:active{
+	*/
+	/*	h3:active{
 			box-shadow: 0 0 0 0;
 			top:3px;
-			/*transition: ease 2s ;*/
-		}
+			/*transition: ease 2s ;
+		}*/
 
 		
 
@@ -36,7 +37,7 @@
 
 	
 	<main class="faq">
-
+	<div class="ui huge header" style="text-transform:uppercase;">FAQ</div>
 	<div class="container">
 	<div id="accordion">
 		<h3>Why should I use Meteor Repairs for a repair?</h3>
@@ -87,7 +88,9 @@
 		$("h3").click(function(){
 			$("p").hide();
 			$(this).next("p").slideToggle();
-		})
+		});
+		$("#accordion h3").addClass("h3-style");
+		$("#accordion h3").prepend('<span class="ui-icon-caret-1-e"></span>')
 	})
 
 

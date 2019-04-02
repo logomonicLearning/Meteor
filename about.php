@@ -29,14 +29,16 @@ include_once("dbCon.php");
 ?>
 <style>
   .container{
-    position:relative;
-    top:50px;
+    /*position:relative;*/
+    /*top:50px;*/
     margin:auto;
-    margin-bottom:100px;
+    /*margin-bottom:100px;*/
+
   }
 
 
 </style>
+<main>
 <div class="about container" style="text-align:justify; width:50%;">
 
 <?php
@@ -58,7 +60,7 @@ include_once("dbCon.php");
  ?>
 
 </div>
-
+</main>
 
 <?php
 include_once("footer.php");

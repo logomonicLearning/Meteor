@@ -48,7 +48,12 @@
           scrollTop: 0
       }, 3000);
   });
+  $(window).load(function() {
+      // Animate loader off screen
+      $(".se-pre-con").fadeOut("slow");;
+    });
 
+  
   $(document).ready(function() {
       // $('.pure-menu-list .pure-menu-has-children').dropdown({
       //   on: 'hover'
