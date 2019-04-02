@@ -4,34 +4,6 @@
 ?>
 			
 <style>
-	/*.container{
-			width:80%;
-			position:relative;
-			margin:auto;
-		}
-		h3{
-			background:#E6E6E6;
-			padding:10px;
-			cursor:pointer;
-			box-shadow:3px 3px 3px 1px grey;
-			position: relative;
-			/*bottom:3px;*/
-	/*		transition: top 2s ease;
-			-webkit-transition: top 2s ease;
-			-moz-transition: top 2s ease;
-			-o-transition: top 2s ease;
-
-		}
-	*/
-	/*	h3:active{
-			box-shadow: 0 0 0 0;
-			top:3px;
-			/*transition: ease 2s ;
-		}*/
-
-		
-
-
 
 </style>	
 
@@ -93,13 +65,6 @@
 		$("#accordion h3").prepend('<span class="ui-icon-caret-1-e"></span>')
 	})
 
-
-	// $(document).ready(function(){
-	  // $("#accordion").accordion();	
-	  // $("#accordion h3").addClass("h3-style");
-	  // $("#accordion h3").prepend('<span class="ui-icon-caret-1-e"></span>')
-	  
-	// });
 	</script>
 
 <?php

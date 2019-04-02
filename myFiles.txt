@@ -1,26 +1,31 @@
- Volume in drive C has no label.
- Volume Serial Number is FE02-E71E
-
- Directory of C:\xampp\htdocs\Blake\PART2\Semantic-UI-master\examples\components
-
-05/03/2019  16:12    <DIR>          .
-05/03/2019  16:12    <DIR>          ..
-21/10/2018  20:59             7,379 button.html
-21/10/2018  20:59             8,639 card.html
-05/03/2019  15:38             3,633 icons8-bug-100.png
-05/03/2019  15:42             3,342 icons8-hdd-64.png
-05/03/2019  15:42             3,673 icons8-hdd-96.png
-05/03/2019  15:40               994 icons8-laptop-80.png
-05/03/2019  15:41            18,306 icons8-workstation-512.png
-04/03/2019  15:58             9,565 index.html
-05/03/2019  12:19            10,826 index2.html
-05/03/2019  16:00            13,285 index3.html
-05/03/2019  16:11            13,459 index4.html
-21/10/2018  20:59             4,777 input.html
-21/10/2018  20:59             6,079 menu.html
-05/03/2019  16:12                 0 myFiles.txt
-21/10/2018  20:59             2,579 site.html
-04/03/2019  15:21             3,314 sliderLogic.js
-21/10/2018  20:59            11,489 table.html
-              17 File(s)        121,339 bytes
-               2 Dir(s)  291,531,157,504 bytes free
+.gitignore
+.vs
+about.php
+archive
+carousel.php
+cart.png
+cart0.1.php
+checkout.php
+computerRepair.php
+contact.php
+contactForm.php
+contact_process.php
+css
+database
+dataRecovery.php
+data_model.php
+dbCon.php
+faq.php
+footer.php
+gitlocation.txt
+header.php
+headerFilesOrganiser.txt
+images
+index.php
+js
+myFiles.txt
+product.php
+products.php
+scratchpad.html
+semui cheatsheet
+virusRemoval.php

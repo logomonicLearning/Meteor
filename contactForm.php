@@ -188,19 +188,16 @@ function send_email($enquiry, $model, $description, $firstName, $lastName, $emai
 
             <!-- errEnquiry, errModel, errFName, errLName, errEmail, errPhone, errConsent, errDescription -->
         <div class="field">
-            <label>Make/Model</label>
             <input type="text" name="model" id="model" placeholder="Make/Model" value="<?php echo $model ?>">
             <div class="ui error message" id="err-model"><?php echo $error_model;?></div>
         </div>
         
       <div class="field">
-          <label>Brief Description</label>
           <textarea name="description" id="description" value="<?php echo $description ?>" ></textarea>
           <div class="ui error message" id="err-description"><?php echo $error_description;?></div>
         </div>
 
         <div class="field">
-          <label>Name</label>
           <div class="two fields">
             <div class="field">
               <input type="text" name="first-name" id="first-name" placeholder="First Name" value="<?php echo $firstName?>">
@@ -215,13 +212,11 @@ function send_email($enquiry, $model, $description, $firstName, $lastName, $emai
         </div><!-- end of field (one field containing two fieldcontainer with 2 fields) -->
 
         <div class="field">
-            <label>Phone</label>
             <input type="text" name="phone" id="phone" placeholder="Phone number" value="<?php echo $phone?>">
             <div class="ui error message" id="err-phone"><?php echo $error_phone;?></div>
         </div>
 
         <div class="field">
-            <label>Email</label>
             <input type="text" name="email" id="email" placeholder="Email" value="<?php echo $email?>">
             <div class="ui error message" id="err-email"><?php echo $error_email;?></div>
         </div>
@@ -229,7 +224,6 @@ function send_email($enquiry, $model, $description, $firstName, $lastName, $emai
         <div class="ui segment">
           <div class="field">
             <div class="checkbox">
-              
               <input type="checkbox" name="consent" id="consent" tabindex="0" value="yes">
               I consent for meteor to save my information for contact purposes
               <div class="ui error message" id="err-consent"><?php echo $error_consent;?></div>  

@@ -2,30 +2,11 @@
   
 <?php 
     include_once("header.php");
-
 	  // include_once("dbCon.php");
 ?>
 
 <style type="text/css">
-  .contact section:nth-child(1), .contact section:nth-child(2), .contact section:nth-child(3), .contact section:nth-child(4),  .contact section:nth-child(5), .contact section:nth-child(6){
-    display:flex;
-    flex-direction:column;
-    /* align-items:center; */
-    justify-content:center;
-    padding-left:20px;
-    background:rgba(65, 145, 149, 0.75);;
-  }
-  
-  .contact section:nth-child(7){
-    display:flex;
-    justify-content:  center;
-    align-items:  center;
-  }
-
-  #service-area  li{
-    list-style-type:none;
-  }
-
+ 
 </style>
 
 <?php
@@ -45,7 +26,17 @@
 <main class="contact">
 <div class="container">
   <div class="wrapper grid">
-    <section id="opening">opening</section>
+    <section id="opening">
+    <strong>OPENING HOURS:</strong><br>
+MONDAY 10:00 - 18:00 <br>
+TUESDAY 10:00 - 18:00 <br>
+WEDNESDAY 10:00 - 18:00 <br>
+THURSDAY 10:00 - 18:00 <br>
+FRIDAY 10:00 - 18:00 <br>
+SATURDAY 11:00 - 15:00 <br>
+SUNDAY CLOSED 
+
+    </section>
     <section id="address">
       <div class="ui small header">
         <i class="ui icon car"></i>Visit us</div> 
@@ -73,8 +64,12 @@
       Monday to Friday 8am to 8pm <br>
       Saturday 9am to 4pm <br>
     </section>
-    <section id="mail"><div class="ui medium header"><i class="ui icon mail"></i>Email Us</div><a href="">admin@meteorrepair.com</a></section>
-    <section id="share"><i class="ui icon google plus g"></i></section>
+    <section id="share">
+         <img src="images/icons/facebook-square-brands.svg" alt="">
+         <img src="images/icons/twitter-square-brands.svg" alt="">
+         <img src="images/icons/instagram-brands.svg" alt="">
+         <img src="images/icons/linkedin-brands.svg" alt="">
+    </section>
     <section id="map">
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2629977.6105622104!2d15.369873000000002!3d49.93000800000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2scz!4v1552141263491" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen>
       </iframe>

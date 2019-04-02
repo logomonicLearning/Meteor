@@ -1,86 +1,105 @@
-/*    body{
-      background: #ebebeb;
-    }
-*/    .contact .grid {
-      height: 100%;
-    }
-    .contact .image {
-      margin-top: -100px;
-    }
-    .contact .column {
-      max-width: 450px;
-    }
+.contact .grid {
+  height: 100%;
+}
+.contact .image {
+   margin-top: -100px;
+}
+
+.contact .column {
+  max-width: 450px;
+}
+
 form#inner-form{
   background:#ebebeb;
   padding:10px;
 }  
+
 .contact .container{
   width:80%;
   position:relative;
   margin:auto;
-  /* border:1px solid black; */
-  
-  
 }
 
 .contact .wrapper{
-  height:auto;
-  
+  height:auto; 
 }
-
-
 
 .contact .grid{
   display:grid;
-  grid-template-rows:repeat(6,1fr);
+  grid-template-rows:repeat(5,1fr);
   grid-template-columns:repeat(3,1fr);
-  grid-template-areas:;
-  grid-gap:15px;
+  grid-template-areas:"call form form"
+                      "service form form"
+                      "social form form"
+                      "map map visit"
+                      "map map opening";
+  grid-gap:20px;
   background:#ebebeb;
+  padding:20px;
 }
 
-.contact section{
-  border:1px solid green;
-}
-
-#opening, #address, #service-ares, #call, #mail, #share{
-  grid-column:1/2
-}
-
-#opening{
-  grid-row:1 /2;
-    
-}
-
-#address{
-  grid-row:2 /3;
-
-  border:1px solid
-}
-.contact #service-area{
-  grid-row:3/4;
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-start;
-
+#form{
+  grid-area:form;
 }
 
 #call{
-  
+  grid-area:call;
 }
-#mail{
-  
-}
+
 #share{
+  grid-area:social;
+  display:grid;
+  grid-template-rows:repeat(2,1fr);
+  grid-template-columns:repeat(2,1fr);
+  grid-auto-flow:column;
+  align-items:center;
+  justify-content: center;
+  justify-items: center;
+  background:#41919569;
   
 }
 
-#map, #form{
-  grid-column:2 /span 2;
-}
 #map{
-  grid-row:1 /span 2;
+  grid-area:map;
 }
-#form{
-  grid-row:3 /span 4;
+
+#address{
+  grid-area:visit;
+}
+
+#opening{
+  grid-area:opening;
+}
+
+#service-area  li{
+  list-style-type:none;
+}
+
+
+.contact section:nth-child(1), .contact section:nth-child(2), .contact section:nth-child(3), .contact section:nth-child(4){
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding-left:20px;
+  background:#41919569;
+}
+
+.contact #map{
+  display:flex;
+  justify-content: center;
+  align-items:  center;
+  border:1px solid green;
+
+}
+
+
+.ui.primary.button, .ui.primary.buttons .button {
+  background-color: #419195ed;
+  color: #FFF;
+}
+
+#share img{
+  width:50px;
+  height:50px;
+  
 }

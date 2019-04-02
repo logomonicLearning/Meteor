@@ -1,0 +1,13 @@
+cart.png
+facebook-square-brands.svg
+icons8-bug-100.png
+icons8-hdd-64.png
+icons8-hdd-96.png
+icons8-laptop-80.png
+icons8-workstation-512.png
+instagram-brands.svg
+linkedin-brands.svg
+linkedIn.png
+myfiles.txt
+twitter-square-brands.svg
+twitter.png

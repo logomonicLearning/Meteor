@@ -52,7 +52,7 @@
               Laptop Repair
             </div>
             <div class="description">
-              We will repair your laptop good and proper!
+              We can repair a wide range of laptop related problems. 
               <!-- <img src="../assets/images/wireframe/paragraph.png" class="ui wireframe image"> -->
             </div>
           </div>
@@ -73,7 +73,7 @@
                 Desktop Repair
               </div>
               <div class="description">
-                We will repair your laptop good and proper!
+                We will repair your Desktop good and proper!
                 <!-- <img src="../assets/images/wireframe/paragraph.png" class="ui wireframe image"> -->
               </div>
             </div>
@@ -94,7 +94,7 @@
                   Data Recovery
                 </div>
                 <div class="description">
-                  We will repair your laptop good and proper!
+                  Hard drive crash? fear not, we can recover your lost data!
                   <!-- <img src="../assets/images/wireframe/paragraph.png" class="ui wireframe image"> -->
                 </div>
               </div>
@@ -115,7 +115,7 @@
                     Virus Removal
                   </div>
                   <div class="description">
-                    Is your laptop bugged out? dont worry
+                    Is your laptop bugged out? dont worry. we can fix that.
                     <!-- <img src="../assets/images/wireframe/paragraph.png" class="ui wireframe image"> -->
                   </div>
                 </div>

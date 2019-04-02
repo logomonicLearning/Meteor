@@ -1,6 +1,5 @@
       .container{
         width:100%;
-        /*background:grey;*/
       }
 
       .products .wrapper{
@@ -22,13 +21,6 @@
         border:1px dotted green;
       }
 
-      .ui.card{
-        margin:0;
-        height:400px;
-      }
-
-      
-      
       .card{
       	display:flex;
       	flex-direction:column;
@@ -38,10 +30,10 @@
       	height:350px;
       	padding:5px 15px;
       }
-      	.card .image{
-      		/*align-self:flex-start;*/
+      
+      .card .image{
       		flex-basis:30%;
-      	}
+      }
 
 		.card .content{
 			border-top:1px solid #2224261a;
@@ -60,14 +52,12 @@
 		}
 		
 		.button-primary {
-    background: #f0c14b;
-    border-color: #a88734 #9c7e31 #846a29;
-    color: #111;
-}	
-      /*.card.buy-it{
-      	flex-basis:10%;	
-      */}
-		i.icon.cart:before {
+      background: #f0c14b;
+      border-color: #a88734 #9c7e31 #846a29;
+      color: #111;
+    }	
+    
+    i.icon.cart:before {
 		    content: "\f07a";
 		    font-size: 18px;
 		}

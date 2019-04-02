@@ -29,11 +29,11 @@ include_once("dbCon.php");
 ?>
 <style>
   .container{
-    /*position:relative;*/
-    /*top:50px;*/
     margin:auto;
-    /*margin-bottom:100px;*/
+  }
 
+  .about p{
+    font-size:20px;
   }
 
 
@@ -46,7 +46,7 @@ include_once("dbCon.php");
 
   	  foreach($records as $record){
 
-  	  	echo "<h2>".$record['title']. "</h2>";
+  	  	echo "<h2 class='ui huge header'>".$record['title']. "</h2>";
   	  	echo $record['message'];
 
 

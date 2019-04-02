@@ -11,7 +11,7 @@
                 <div class="slide-group">
                   
                   <div class="slide slide-1">
-                    <!-- <img src="images/backgrounds/laptop-brokenscreen.jpg" alt="No two are the same"/> -->
+                    <img src="images/backgrounds/shatteredScreen.png" alt="No two are the same"/>
                   </div>
 
                   <div class="slide slide-2">
@@ -21,9 +21,8 @@
                   <div class="slide slide-3">
                     <img src="images/backgrounds/pcDoctorCar.png" alt="The Flower Series" />
                   </div>
-
                   <div class="slide slide-4">
-                    <img src="images/backgrounds/virusDetectedCar.png" alt="Monsieur Mints"/>
+                    <img src="images/backgrounds/hardDirveCar.png" alt="Monsieur Mints"/>
                   </div>
 
                 </div>
